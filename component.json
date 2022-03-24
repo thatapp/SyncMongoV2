@@ -1,0 +1,106 @@
+{
+    "title": "Accounting",
+    "description": "# Introduction\nThe Xero Accounting API is a RESTful web service and uses the OAuth (v1.0a) protocol to authenticate 3rd party applications. The Accounting API exposes accounting and related functions of the main Xero application and can be used for a variety of purposes such as creating transactions like invoices and credit notes, right through to extracting accounting data via our reports endpoint.\n",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/xero.com/2.0/swagger.json",
+    "buildType":"docker",
+    "version": "1.0.4",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.xero.com/api.xro/2.0",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "get_Accounts": {
+            "main": "./lib/actions/get_Accounts.js",
+            "title": "Retrieve the full chart of accounts",
+            "description": "Retrieve the chart of accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_Accounts": {
+            "main": "./lib/actions/post_Accounts.js",
+            "title": "Create or update accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "application/xml": "application/xml"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_Accounts": {
+            "main": "./lib/actions/put_Accounts.js",
+            "title": "Update accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "application/xml": "application/xml"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+        
+    }
+}

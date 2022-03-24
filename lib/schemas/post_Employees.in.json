@@ -1,0 +1,74 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "EmployeeID": {
+                    "description": "The Xero identifier for an employee\ne.g. 297c2dc5-cc47-4afd-8ec8-74990b8761e9",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "ExternalLink": {
+                    "allOf": [
+                        {
+                            "description": "Link to an external resource, for example, an employee record in an external system. You can specify the URL element.\nThe description of the link is auto-generated in the form “Go to <App name>”. <App name> refers to the Xero application name that is making the API call."
+                        },
+                        {
+                            "properties": {
+                                "LinkType": {
+                                    "description": "External link types",
+                                    "enum": [
+                                        "Facebook",
+                                        "GooglePlus",
+                                        "LinkedIn",
+                                        "Twitter",
+                                        "Website"
+                                    ],
+                                    "type": "string"
+                                },
+                                "Url": {
+                                    "description": "URL for service",
+                                    "example": "http://twitter.com/xeroapi",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    ],
+                    "type": "object"
+                },
+                "FirstName": {
+                    "description": "First name of an employee (max length = 255)",
+                    "example": "Adam",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "LastName": {
+                    "description": "Last name of an employee (max length = 255)",
+                    "example": "Moore",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "Status": {
+                    "description": "Current status of an employee",
+                    "enum": [
+                        "ACTIVE",
+                        "ARCHIVED"
+                    ],
+                    "type": "string"
+                }
+            },
+            "required": [
+                "FirstName",
+                "LastName"
+            ],
+            "type": "object"
+        }
+    }
+}

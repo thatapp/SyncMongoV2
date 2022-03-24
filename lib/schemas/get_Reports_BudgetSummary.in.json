@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "date": {
+            "required": false,
+            "type": "string"
+        },
+        "periods": {
+            "required": false,
+            "type": "integer"
+        },
+        "timeframe": {
+            "required": false,
+            "type": "integer"
+        }
+    }
+}

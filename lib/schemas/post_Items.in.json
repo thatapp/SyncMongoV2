@@ -1,0 +1,134 @@
+{
+    "type": "object",
+    "properties": {
+        "unitdp": {
+            "required": false,
+            "type": "integer",
+            "default": 4
+        },
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "Code": {
+                    "description": "User defined item code",
+                    "example": "ABC123",
+                    "maxLength": 30,
+                    "type": "string"
+                },
+                "Description": {
+                    "description": "The sales description of the item",
+                    "example": "A really cool widget",
+                    "maxLength": 4000,
+                    "type": "string"
+                },
+                "InventoryAssetAccountCode": {
+                    "description": "The inventory asset account for the item. The account must be of type INVENTORY. The  COGSAccountCode in PurchaseDetails is also required to create a tracked item",
+                    "example": 630,
+                    "type": "string"
+                },
+                "IsPurchased": {
+                    "description": "Boolean value, defaults to true. When IsPurchased is true the item is available for purchase transactions in the Xero UI. If IsPurchased is updated to false then PurchaseDescription and PurchaseDetails values will be nulled.",
+                    "type": "boolean"
+                },
+                "IsSold": {
+                    "description": "Boolean value, defaults to true. When IsSold is true the item will be available on sales transactions in the Xero UI. If IsSold is updated to false then Description and SalesDetails values will be nulled.",
+                    "type": "boolean"
+                },
+                "IsTrackedAsInventory": {
+                    "description": "True for items that are tracked as inventory. An item will be tracked as inventory if the InventoryAssetAccountCode and COGSAccountCode are set.",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "ItemID": {
+                    "description": "The Xero identifier for an Item",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Name": {
+                    "description": "The name of the item (max length = 50)",
+                    "example": "Widget",
+                    "maxLength": 50,
+                    "type": "string"
+                },
+                "PurchaseDescription": {
+                    "description": "The purchase description of the item",
+                    "example": "A cheapo widget",
+                    "maxLength": 4000,
+                    "type": "string"
+                },
+                "PurchaseDetails": {
+                    "properties": {
+                        "AccountCode": {
+                            "description": "Default account code to be used for purchase of non-tracked items. Not applicable to the purchase details of tracked items",
+                            "example": 420,
+                            "type": "string"
+                        },
+                        "COGSAccountCode": {
+                            "description": "Cost of goods sold account. Only applicable to the purchase details of tracked items.",
+                            "example": 420,
+                            "type": "string"
+                        },
+                        "TaxType": {
+                            "description": "Used as an override if the default Tax Code for the selected AccountCode is not correct.",
+                            "example": "NONE",
+                            "type": "string"
+                        },
+                        "UnitPrice": {
+                            "description": "Unit Price of the item. By default UnitPrice is rounded to two decimal places. You can use 4 decimal places by adding the unitdp=4 querystring parameter to your request.",
+                            "format": "float",
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "QuantityOnHand": {
+                    "description": "The quantity of the item on hand",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "SalesDetails": {
+                    "properties": {
+                        "AccountCode": {
+                            "description": "Default account code to be used for sale.",
+                            "example": 200,
+                            "type": "string"
+                        },
+                        "TaxType": {
+                            "description": "Used as an override if the default Tax Code for the selected AccountCode is not correct .",
+                            "example": "NONE",
+                            "type": "string"
+                        },
+                        "UnitPrice": {
+                            "description": "Unit Price of the item. By default UnitPrice is rounded to two decimal places. You can use 4 decimal places by adding the unitdp=4 querystring parameter to your request.",
+                            "format": "float",
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "TotalCostPool": {
+                    "description": "The value of the item on hand. Calculated using average cost accounting.",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date in UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Code"
+            ],
+            "type": "object"
+        }
+    }
+}

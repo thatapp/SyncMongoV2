@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "date": {
+            "required": false,
+            "type": "string",
+            "format": "date"
+        },
+        "trackingOptionID1": {
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+        },
+        "trackingOptionID2": {
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+        },
+        "standardLayout": {
+            "required": false,
+            "type": "boolean"
+        },
+        "paymentsOnly": {
+            "required": false,
+            "type": "boolean"
+        }
+    }
+}

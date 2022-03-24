@@ -1,0 +1,284 @@
+{
+    "type": "object",
+    "properties": {
+        "unitdp": {
+            "required": false,
+            "type": "integer",
+            "default": 4
+        },
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "Allocations": {
+                    "description": "Transactions the credit note has been allocated to",
+                    "items": {
+                        "properties": {
+                            "AppliedAmount": {
+                                "description": "the amount being applied to the invoice",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "Date": {
+                                "description": "The date the prepayment is applied YYYY-MM-DD (read-only). This will be the latter of the invoice date and the prepayment date.",
+                                "format": "date",
+                                "readOnly": true,
+                                "type": "string"
+                            },
+                            "Invoice": {
+                                "properties": {
+                                    "InvoiceID": {
+                                        "format": "uuid",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "required": [
+                            "Invoice",
+                            "AppliedAmount",
+                            "Date"
+                        ],
+                        "type": "object"
+                    },
+                    "readOnly": true,
+                    "type": "array"
+                },
+                "BrandingThemeID": {
+                    "description": "The identifier for the branding theme applied to the credit note",
+                    "format": "uuid",
+                    "type": "string"
+                },
+                "Contact": {
+                    "properties": {
+                        "ContactID": {
+                            "description": "Xero identifier",
+                            "example": "cc04bc53-f094-4ed6-8b3e-67297c37fae0",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Name": {
+                            "description": "Full name of contact/organisation",
+                            "example": "Adam Moore",
+                            "maxLength": 255,
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "Name"
+                    ],
+                    "type": "object",
+                    "xml": {
+                        "name": "Contact"
+                    }
+                },
+                "CreditNoteID": {
+                    "description": "Xero generated unique identifier",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "CreditNoteNumber": {
+                    "description": "ACCRECCREDIT – Unique alpha numeric code identifying credit note (when missing will auto-generate from your Organisation Invoice Settings)",
+                    "example": "CN-123",
+                    "type": "string"
+                },
+                "CurrencyCode": {
+                    "description": "Currency used for the Credit Note",
+                    "example": "AUD",
+                    "type": "string"
+                },
+                "CurrencyRate": {
+                    "description": "The currency rate for a multicurrency invoice. If no rate is specified, the XE.com day rate is used",
+                    "format": "float",
+                    "type": "number"
+                },
+                "Date": {
+                    "description": "The date the credit note is issued YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation",
+                    "format": "date",
+                    "type": "string"
+                },
+                "FullyPaidOnDate": {
+                    "description": "Date when credit note was fully paid",
+                    "format": "date",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "HasAttachments": {
+                    "description": "boolean to indicate if a credit note has an attachment",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "LineAmountTypes": {
+                    "description": "How tax is applied on the line items",
+                    "enum": [
+                        "Inclusive",
+                        "Exclusive",
+                        "NoTax"
+                    ],
+                    "type": "string"
+                },
+                "LineItems": {
+                    "items": {
+                        "properties": {
+                            "AccountCode": {
+                                "description": "The account that the lineitem is being coded to",
+                                "example": 420,
+                                "type": "string"
+                            },
+                            "Description": {
+                                "description": "Description needs to be at least 1 char long. A line item with just a description (i.e no unit amount or quantity) can be created by specifying just a <Description> element that contains at least 1 character",
+                                "example": "Travel Expenses",
+                                "type": "string"
+                            },
+                            "DiscountRate": {
+                                "description": "Percentage discount being applied to a line item (only supported on ACCREC invoices – ACC PAY invoices and credit notes in Xero do not support discounts",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "ItemCode": {
+                                "description": "Code of the item",
+                                "example": 110,
+                                "type": "string"
+                            },
+                            "LineAmount": {
+                                "description": "The line amount reflects the discounted price if a DiscountRate has been used i.e LineAmount = Quantity * Unit Amount * ((100 – DiscountRate)/100)",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "LineItemID": {
+                                "description": "The Xero generated identifier for a LineItem. If LineItemIDs are not included with line items in an update request then the line items are deleted and recreated.",
+                                "format": "uuid",
+                                "readOnly": true,
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "description": "LineItem Quantity",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "TaxAmount": {
+                                "description": "The tax amount is auto calculated as a percentage of the line amount based on the tax rate. This value can be overriden if the calculated TaxAmount is not correct.",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "TaxType": {
+                                "description": "Used as an override if the default Tax Code for the selected <AccountCode> is not correct",
+                                "type": "string"
+                            },
+                            "Tracking": {
+                                "properties": {
+                                    "TrackingCategory": {
+                                        "items": {
+                                            "properties": {
+                                                "Name": {
+                                                    "description": "The name of the tracking category",
+                                                    "example": "Region",
+                                                    "type": "string"
+                                                },
+                                                "Option": {
+                                                    "description": "The name of the tracking option",
+                                                    "example": "North",
+                                                    "type": "string"
+                                                },
+                                                "TrackingCategoryID": {
+                                                    "description": "The identifier for the tracking category",
+                                                    "format": "uuid",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "type": "array"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "UnitAmount": {
+                                "description": "Lineitem unit amount. By default, unit amount will be rounded to two decimal places. You can opt in to use four decimal places by adding the querystring parameter unitdp=4 to your query. See the Rounding in Xero guide for more information.",
+                                "format": "float",
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "Description"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Reference": {
+                    "description": "ACCRECCREDIT only – additional reference number",
+                    "example": "ABC123",
+                    "type": "string"
+                },
+                "RemainingCredit": {
+                    "description": "The remaining credit balance on the Credit Note",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "SentToContact": {
+                    "description": "boolean to indicate if a credit note has been sent to a contact via the Xero app (currently read only)",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "Status": {
+                    "description": "The Credit Note status",
+                    "enum": [
+                        "DRAFT",
+                        "SUBMITTED",
+                        "AUTHORISED",
+                        "PAID",
+                        "VOIDED",
+                        "DELETED"
+                    ],
+                    "type": "string"
+                },
+                "SubTotal": {
+                    "description": "The subtotal of the credit note excluding taxes",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "Total": {
+                    "description": "The total of the Credit Note(subtotal + total tax)",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "TotalTax": {
+                    "description": "The total tax on the credit note",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "Type": {
+                    "description": "The type of Credit Note",
+                    "enum": [
+                        "ACCPAYCREDIT",
+                        "ACCRECCREDIT"
+                    ],
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "UTC timestamp of last update to the credit note",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Type",
+                "Contact",
+                "LineItems"
+            ],
+            "type": "object"
+        }
+    }
+}

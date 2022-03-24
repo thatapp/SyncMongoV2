@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "page": {
+            "required": false,
+            "type": "integer",
+            "default": 1
+        },
+        "SourceTransactionID": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "ContactID": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "Status": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "TargetTransactionID": {
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "Date": {
+                    "description": "Date journal was posted – YYYY-MM-DD",
+                    "format": "date",
+                    "type": "string"
+                },
+                "HasAttachments": {
+                    "description": "Boolean to indicate if a manual journal has an attachment",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "JournalID": {
+                    "description": "The Xero identifier for a Manual Journal",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "JournalLines": {
+                    "description": "See JournalLines",
+                    "items": {
+                        "properties": {
+                            "AccountCode": {
+                                "description": "Account Code",
+                                "example": 200,
+                                "type": "string"
+                            },
+                            "Description": {
+                                "description": "Description for journal line",
+                                "example": "Bought a thing",
+                                "type": "string"
+                            },
+                            "LineAmount": {
+                                "description": "Total for line. Debits are positive, credits are negative value",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "TaxAmount": {
+                                "description": "The calculated tax amount based on the TaxType and LineAmount",
+                                "format": "float",
+                                "readOnly": true,
+                                "type": "number"
+                            },
+                            "TaxType": {
+                                "description": "Used as an override if the default Tax Code for the selected AccountCode is not correct.",
+                                "example": "NONE",
+                                "type": "string"
+                            },
+                            "Tracking": {
+                                "description": "Optional Tracking Category. Any JournalLine can have a maximum of 2 TrackingCategory elements.",
+                                "items": {
+                                    "properties": {
+                                        "Name": {
+                                            "description": "The name of the tracking category e.g. Department, Region (max length = 100)",
+                                            "example": "Region",
+                                            "maxLength": 100,
+                                            "type": "string"
+                                        },
+                                        "Options": {
+                                            "items": {
+                                                "properties": {
+                                                    "Name": {
+                                                        "description": "The name of the tracking option e.g. Marketing, East (max length = 50)",
+                                                        "example": "North",
+                                                        "maxLength": 50,
+                                                        "type": "string"
+                                                    },
+                                                    "Status": {
+                                                        "description": "The status of a tracking option",
+                                                        "enum": [
+                                                            "ACTIVE",
+                                                            "ARCHIVED"
+                                                        ],
+                                                        "type": "string"
+                                                    },
+                                                    "TrackingOptionID": {
+                                                        "description": "The Xero identifier for a tracking optione.g. ae777a87-5ef3-4fa0-a4f0-d10e1f13073a",
+                                                        "format": "uuid",
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "Status": {
+                                            "description": "The status of a tracking category",
+                                            "enum": [
+                                                "ACTIVE",
+                                                "ARCHIVED"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        "TrackingCategoryID": {
+                                            "description": "The Xero identifier for a tracking categorye.g. 297c2dc5-cc47-4afd-8ec8-74990b8761e9",
+                                            "format": "uuid",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "LineAmountTypes": {
+                    "default": "Exclusive",
+                    "description": "Line amounts are exclusive of tax by default if you don’t specify this element",
+                    "enum": [
+                        "Inclusive",
+                        "Exclusive",
+                        "NoTax"
+                    ],
+                    "type": "string"
+                },
+                "Narration": {
+                    "description": "Description of journal being posted",
+                    "example": "Fixing a mistake",
+                    "type": "string"
+                },
+                "ShowOnCashBasisReports": {
+                    "description": "Boolean – default is true if not specified",
+                    "type": "boolean"
+                },
+                "Status": {
+                    "description": "Manual Journal Status Codes",
+                    "enum": [
+                        "DRAFT",
+                        "POSTED",
+                        "DELETED",
+                        "VOIDED"
+                    ],
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Url": {
+                    "description": "Url link to a source document – shown as “Go to [appName]” in the Xero app",
+                    "example": "https://myaapp.com/journal/123",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Narration",
+                "JournalLines"
+            ],
+            "type": "object"
+        }
+    }
+}

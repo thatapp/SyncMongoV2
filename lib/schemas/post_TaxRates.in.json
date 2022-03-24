@@ -1,0 +1,102 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "CanApplyToAssets": {
+                    "description": "Boolean to describe if tax rate can be used for asset accounts ",
+                    "type": "boolean"
+                },
+                "CanApplyToEquity": {
+                    "description": "Boolean to describe if tax rate can be used for equity accounts ",
+                    "type": "boolean"
+                },
+                "CanApplyToExpenses": {
+                    "description": "Boolean to describe if tax rate can be used for expense accounts ",
+                    "type": "boolean"
+                },
+                "CanApplyToLiabilities": {
+                    "description": "Boolean to describe if tax rate can be used for liability accounts",
+                    "type": "boolean"
+                },
+                "CanApplyToRevenue": {
+                    "description": "Boolean to describe if tax rate can be used for revenue accounts",
+                    "type": "boolean"
+                },
+                "DisplayTaxRate": {
+                    "description": "Tax Rate (decimal to 4dp) e.g 12.5000",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "EffectiveRate": {
+                    "description": "Effective Tax Rate (decimal to 4dp) e.g 12.5000",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "Name": {
+                    "description": "Name of tax rate",
+                    "example": "Sales Tax",
+                    "type": "string"
+                },
+                "ReportTaxType": {
+                    "description": "See ReportTaxTypes",
+                    "type": "string"
+                },
+                "Status": {
+                    "description": "Status Codes",
+                    "enum": [
+                        "ACTIVE",
+                        "DELETED",
+                        "ARCHIVED"
+                    ],
+                    "type": "string"
+                },
+                "TaxComponents": {
+                    "items": {
+                        "properties": {
+                            "IsCompound": {
+                                "default": false,
+                                "description": "Boolean to describe if Tax rate is compounded.Learn more",
+                                "type": "boolean"
+                            },
+                            "IsNonRecoverable": {
+                                "default": false,
+                                "description": "Determines if this tax component can be recovered",
+                                "type": "boolean"
+                            },
+                            "Name": {
+                                "description": "Name of Tax Component",
+                                "example": "City Tax",
+                                "type": "string"
+                            },
+                            "Rate": {
+                                "description": "Tax Rate (up to 4dp)",
+                                "format": "float",
+                                "type": "number"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "TaxType": {
+                    "description": "Tax Types – can only be used as the identifier on update calls",
+                    "example": "TAX001",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name",
+                "TaxComponents"
+            ],
+            "type": "object"
+        }
+    }
+}

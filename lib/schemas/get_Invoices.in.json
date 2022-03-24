@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "where": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "order": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "unitdp": {
+            "required": false,
+            "type": "integer",
+            "default": 4
+        },
+        "IDs": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "ContactIDs": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "Statuses": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "InvoiceNumbers": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

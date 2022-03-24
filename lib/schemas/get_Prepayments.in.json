@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "where": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "order": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "default": 1
+        },
+        "unitdp": {
+            "required": false,
+            "type": "integer",
+            "default": 4
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

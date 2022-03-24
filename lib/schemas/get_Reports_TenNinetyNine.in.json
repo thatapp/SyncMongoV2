@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "reportYear": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

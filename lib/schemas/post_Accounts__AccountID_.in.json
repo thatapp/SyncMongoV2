@@ -1,0 +1,176 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "properties": {
+                "AccountID": {
+                    "description": "Unique identifier for the account",
+                    "example": "50e845c3-464e-4a6d-8951-8794317c7893",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "BankAccountNumber": {
+                    "description": "For bank accounts only (Type BANK)",
+                    "example": 1234353453453,
+                    "type": "string"
+                },
+                "BankAccountType": {
+                    "description": "For bank accounts only",
+                    "enum": [
+                        "BANK",
+                        "CREDITCARD",
+                        "PAYPAL"
+                    ],
+                    "example": "CREDITCARD",
+                    "type": "string"
+                },
+                "Class": {
+                    "description": "The class of account",
+                    "enum": [
+                        "ASSET",
+                        "EQUITY",
+                        "EXPENSE",
+                        "LIABILITY",
+                        "REVENUE"
+                    ],
+                    "example": "ASSET",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Code": {
+                    "description": "Customer defined alpha numeric account code e.g 200 or SALES",
+                    "example": 200,
+                    "maxLength": 10,
+                    "type": "string"
+                },
+                "CurrencyCode": {
+                    "description": "For bank accounts only",
+                    "example": "AUD",
+                    "type": "string"
+                },
+                "Description": {
+                    "description": "Description of the Account. Valid for all types of accounts except bank accounts",
+                    "example": "A sales account",
+                    "maxLength": 4000,
+                    "type": "string"
+                },
+                "EnablePaymentsToAccount": {
+                    "description": "Describes whether account can have payments applied to it",
+                    "example": false,
+                    "type": "boolean"
+                },
+                "HasAttachments": {
+                    "description": "Indicates if an account has an attachment",
+                    "example": false,
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "Name": {
+                    "description": "Name of account",
+                    "example": "Sales",
+                    "maxLength": 150,
+                    "type": "string"
+                },
+                "ReportingCode": {
+                    "description": "Shown if set",
+                    "example": "ASS",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "ReportingCodeName": {
+                    "description": "Shown if set",
+                    "example": "Asset",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "ShowInExpenseClaims": {
+                    "description": "Describes whether account code is available for use with expense claims",
+                    "example": false,
+                    "type": "boolean"
+                },
+                "Status": {
+                    "description": "Accounts with a status of ACTIVE can be updated to ARCHIVED",
+                    "enum": [
+                        "ACTIVE",
+                        "ARCHIVED"
+                    ],
+                    "example": "ACTIVE",
+                    "type": "string"
+                },
+                "SystemAccount": {
+                    "description": "If this is a system account then this element is returned. Note that non-system accounts may have this element set as either “” or null.",
+                    "enum": [
+                        "DEBTORS",
+                        "CREDITORS",
+                        "BANKCURRENCYGAIN",
+                        "GST",
+                        "GSTONIMPORTS",
+                        "HISTORICAL",
+                        "REALISEDCURRENCYGAIN",
+                        "RETAINEDEARNINGS",
+                        "ROUNDING",
+                        "TRACKINGTRANSFERS",
+                        "UNPAIDEXPCLM",
+                        "UNREALISEDCURRENCYGAIN",
+                        "WAGEPAYABLES"
+                    ],
+                    "example": "ROUNDING",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "TaxType": {
+                    "description": "Default tax rate for the account",
+                    "example": "NONE",
+                    "type": "string"
+                },
+                "Type": {
+                    "description": "Account type",
+                    "enum": [
+                        "BANK",
+                        "CURRENT",
+                        "CURRLIAB",
+                        "DEPRECIATN",
+                        "DIRECTCOSTS",
+                        "EQUITY",
+                        "EXPENSE",
+                        "FIXED",
+                        "INVENTORY",
+                        "LIABILITY",
+                        "NONCURRENT",
+                        "OTHERINCOME",
+                        "OVERHEADS",
+                        "PREPAYMENT",
+                        "REVENUE",
+                        "SALES",
+                        "TERMLIAB",
+                        "PAYGLIABILITY",
+                        "SUPERANNUATIONEXPENSE",
+                        "SUPERANNUATIONLIABILITY",
+                        "WAGESEXPENSE",
+                        "WAGESPAYABLELIABILITY"
+                    ],
+                    "example": "CURRENT",
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Code",
+                "Name",
+                "Type"
+            ],
+            "type": "object"
+        }
+    }
+}

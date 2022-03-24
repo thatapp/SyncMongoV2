@@ -1,0 +1,150 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "Amount": {
+                    "description": "Total of the bank transfer",
+                    "format": "float",
+                    "type": "number"
+                },
+                "Attachments": {
+                    "items": {
+                        "properties": {
+                            "AttachmentId": {
+                                "description": "Xero generated unique identifier for attachment",
+                                "example": "a04bf353-4d9a-4bda-8c1e-db1274164ee",
+                                "format": "uuid",
+                                "type": "string"
+                            },
+                            "ContentLegth": {
+                                "description": "The content length in bytes",
+                                "example": 6384,
+                                "type": "integer"
+                            },
+                            "Filename": {
+                                "description": "The filename of the attachemnt",
+                                "example": "my-receipt.jpg",
+                                "type": "string"
+                            },
+                            "IncludeOnline": {
+                                "description": "Determines whether the attachment is included with the online invoice",
+                                "example": true,
+                                "type": "boolean"
+                            },
+                            "MimeType": {
+                                "description": "The mimetype of the attachemnt",
+                                "example": "image/jpg",
+                                "type": "string"
+                            },
+                            "Url": {
+                                "description": "The URL to where the attachment is located",
+                                "example": "https://api.xero.com/api.xro/2.0/Receipts/e59a2c7f-4078-a0f3-73537afcbba9/Attachments/my-receipt.jpg",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "BankTransferId": {
+                    "description": "Xero generated unique identifier for bank transfers",
+                    "example": "72f1dcfe-5d7d-4239-bf9d-e12469309716",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "CurrencyRate": {
+                    "description": "The currency rate for a multicurrency bank transfer. If no rate is specified, the XE.com day rate is used.",
+                    "format": "float",
+                    "type": "number"
+                },
+                "Date": {
+                    "description": "Date bank transfer was made YYYY-MM-DD",
+                    "format": "date",
+                    "type": "string"
+                },
+                "FromBankAccount": {
+                    "properties": {
+                        "AccountID": {
+                            "description": "Account identifier",
+                            "example": "ae8074e0-1ac1-4b37-8546-afa9fa6ace9e",
+                            "format": "uuid",
+                            "type": "string"
+                        },
+                        "Code": {
+                            "description": "Bank account code",
+                            "example": 610,
+                            "type": "string"
+                        },
+                        "Name": {
+                            "description": "Bank account name",
+                            "example": "Savings account",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "FromBankTransactionID": {
+                    "description": "The Bank Transaction ID for the source account",
+                    "example": "d2c63bbd-bc9e-4fb4-9d1c-e5d15749aaa2",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "HasAttachments": {
+                    "description": "boolean to indicate if the bank transaction has an attachment",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "ToBankAccount": {
+                    "properties": {
+                        "AccountID": {
+                            "description": "Account identifier",
+                            "format": "uuid",
+                            "type": "string"
+                        },
+                        "Code": {
+                            "description": "Bank account code",
+                            "example": 610,
+                            "type": "string"
+                        },
+                        "Name": {
+                            "description": "Bank account name",
+                            "example": "Savings account",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "ToBankTransactionID": {
+                    "description": "The Bank Transaction ID for the destination account",
+                    "example": "66fbdc01-e2e7-4ee3-ab10-2d5821d38fe4",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "FromBankAccount",
+                "ToBankAccount",
+                "Amount"
+            ],
+            "type": "object",
+            "xml": {
+                "name": "BankTransfer"
+            }
+        }
+    }
+}

@@ -1,0 +1,474 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "AccountNumber": {
+                    "description": "A user defined account number. This can be updated via the API and the Xero UI.",
+                    "example": "AM123",
+                    "maxLength": 50,
+                    "type": "string"
+                },
+                "AccountsPayableTaxType": {
+                    "description": "Default tax type used for contact on AP invoices",
+                    "example": "NONE",
+                    "type": "string"
+                },
+                "AccountsReceivableTaxType": {
+                    "description": "Default tax type used for contact on AR invoices",
+                    "example": "NONE",
+                    "type": "string"
+                },
+                "Addresses": {
+                    "description": "Address details for the contact",
+                    "items": {
+                        "properties": {
+                            "AddressLine1": {
+                                "example": "Apartment A",
+                                "maxLength": 500,
+                                "type": "string"
+                            },
+                            "AddressLine2": {
+                                "example": "Building 20",
+                                "maxLength": 500,
+                                "type": "string"
+                            },
+                            "AddressLine3": {
+                                "example": "123 Main St",
+                                "maxLength": 500,
+                                "type": "string"
+                            },
+                            "AddressLine4": {
+                                "example": "South",
+                                "maxLength": 500,
+                                "type": "string"
+                            },
+                            "AddressType": {
+                                "description": "The address type",
+                                "enum": [
+                                    "POBOX",
+                                    "STREET",
+                                    "POSTAL"
+                                ],
+                                "example": "POSTAL",
+                                "type": "string"
+                            },
+                            "Attentionto": {
+                                "example": "Accounts Department",
+                                "maxLength": 255,
+                                "type": "string"
+                            },
+                            "City": {
+                                "example": "New York City",
+                                "maxLength": 255,
+                                "type": "string"
+                            },
+                            "Country": {
+                                "example": "United States",
+                                "maxLength": 50,
+                                "type": "string"
+                            },
+                            "PostalCode": {
+                                "example": 47483,
+                                "maxLength": 50,
+                                "type": "string"
+                            },
+                            "Region": {
+                                "example": "New York",
+                                "maxLength": 500,
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Balances": {
+                    "description": "The raw AccountsReceivable (sales invoices) and AccountsPayable (bills) outstanding and overdue amounts, not converted to base currency",
+                    "items": {
+                        "properties": {
+                            "AccountsPayable": {
+                                "properties": {
+                                    "Outstanding": {
+                                        "description": "AP outstanding balance",
+                                        "example": 50,
+                                        "format": "float",
+                                        "readOnly": true,
+                                        "type": "number"
+                                    },
+                                    "Overdue": {
+                                        "description": "AP overdue balance",
+                                        "example": 2,
+                                        "format": "float",
+                                        "readOnly": true,
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "AccountsReceivable": {
+                                "properties": {
+                                    "Outstanding": {
+                                        "description": "AR outstanding balance",
+                                        "example": 1000,
+                                        "format": "float",
+                                        "readOnly": true,
+                                        "type": "number"
+                                    },
+                                    "Overdue": {
+                                        "description": "AR overdue balance",
+                                        "example": 500,
+                                        "format": "float",
+                                        "readOnly": true,
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "readOnly": true,
+                    "type": "array"
+                },
+                "BankAccountDetails": {
+                    "description": "Bank account number of contact",
+                    "example": "061844 8474733",
+                    "type": "string"
+                },
+                "BatchPayments": {
+                    "properties": {
+                        "BankAccountName": {
+                            "example": "Globo Bank",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "BankAccountNumber": {
+                            "example": "098765 123456",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Details": {
+                            "example": "Stuff about the account",
+                            "readOnly": true,
+                            "type": "string"
+                        }
+                    },
+                    "readOnly": true,
+                    "type": "object"
+                },
+                "BrandingTheme": {
+                    "properties": {
+                        "BrandingThemeID": {
+                            "description": "Xero identifier",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "CreatedDateUTC": {
+                            "description": "UTC timestamp of creation date of branding theme",
+                            "format": "date-time",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Name": {
+                            "description": "Name of branding theme",
+                            "example": "VIP Customer Theme",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "SortOrder": {
+                            "description": "Integer – ranked order of branding theme. The default branding theme has a value of 0",
+                            "readOnly": true,
+                            "type": "integer"
+                        }
+                    },
+                    "readOnly": true,
+                    "type": "object"
+                },
+                "ContactGroups": {
+                    "items": {
+                        "properties": {
+                            "ContactGroupID": {
+                                "description": "Unique identifier for the contact group",
+                                "example": "50e845c3-464e-4a6d-8951-8794317c7893",
+                                "format": "uuid",
+                                "readOnly": true,
+                                "type": "string"
+                            },
+                            "Name": {
+                                "description": "Name of the contact group",
+                                "example": "Training",
+                                "type": "string"
+                            },
+                            "Status": {
+                                "description": "The status of the contact group",
+                                "enum": [
+                                    "ACTIVE",
+                                    "DELETED"
+                                ],
+                                "example": "ACTIVE",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Name"
+                        ],
+                        "type": "object"
+                    },
+                    "readOnly": true,
+                    "type": "array"
+                },
+                "ContactID": {
+                    "description": "Xero identifier",
+                    "example": "cc04bc53-f094-4ed6-8b3e-67297c37fae0",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "ContactPersons": {
+                    "items": {
+                        "properties": {
+                            "EmailAddress": {
+                                "description": "Email address of person",
+                                "example": "aaron@muir.com",
+                                "type": "string"
+                            },
+                            "FirstName": {
+                                "description": "First name of person",
+                                "example": "Aaron",
+                                "type": "string"
+                            },
+                            "IncludeInEmails": {
+                                "description": "Boolean to indicate whether contact should be included on emails with invoices etc.",
+                                "example": true,
+                                "type": "boolean"
+                            },
+                            "LastName": {
+                                "description": "Last name of person",
+                                "example": "Muir",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "ContactStatus": {
+                    "description": "Current status of a contact",
+                    "enum": [
+                        "ACTIVE",
+                        "ARCHIVED"
+                    ],
+                    "example": "ACTIVE",
+                    "type": "string"
+                },
+                "DefaultCurrency": {
+                    "description": "Default currency for raising invoices against contact",
+                    "example": "AUD",
+                    "type": "string"
+                },
+                "EmailAddress": {
+                    "description": "Email address of contact person (umlauts not supported)",
+                    "example": "adam@moore.com",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "FirstName": {
+                    "description": "First name of contact person",
+                    "example": "Adam",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "HasAttachments": {
+                    "description": "A boolean to indicate if a contact has an attachment",
+                    "example": true,
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "IsCustomer": {
+                    "description": "Boolean that describes if a contact has any AR invoices entered against them. Cannot be set via PUT or POST – it is automatically set when an accounts receivable invoice is generated against this contact.",
+                    "example": true,
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "IsSupplier": {
+                    "description": "Boolean that describes if a contact that has any AP invoices entered against them. Cannot be set via PUT or POST – it is automatically set when an accounts payable invoice is generated against this contact.",
+                    "example": true,
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "LastName": {
+                    "description": "Last name of contact person",
+                    "example": "Moore",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "Name": {
+                    "description": "Full name of contact/organisation",
+                    "example": "Adam Moore",
+                    "maxLength": 255,
+                    "type": "string"
+                },
+                "PaymentTerms": {
+                    "items": {
+                        "properties": {
+                            "Bills": {
+                                "properties": {
+                                    "Days": {
+                                        "example": 1,
+                                        "type": "string"
+                                    },
+                                    "Type": {
+                                        "enum": [
+                                            "DAYSAFTERBILLDATE",
+                                            "DAYSAFTERBILLMONTH",
+                                            "OFCURRENTMONTH",
+                                            "OFFOLLOWINGMONTH"
+                                        ],
+                                        "example": "OFFOLLOWINGMONTH",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "Sales": {
+                                "properties": {
+                                    "Days": {
+                                        "example": 30,
+                                        "type": "string"
+                                    },
+                                    "Type": {
+                                        "enum": [
+                                            "DAYSAFTERBILLDATE",
+                                            "DAYSAFTERBILLMONTH",
+                                            "OFCURRENTMONTH",
+                                            "OFFOLLOWINGMONTH"
+                                        ],
+                                        "example": "DAYSAFTERBILLDATE",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Phones": {
+                    "items": {
+                        "properties": {
+                            "PhoneAreaCode": {
+                                "example": 3,
+                                "maxLength": 10,
+                                "type": "string"
+                            },
+                            "PhoneCountryCode": {
+                                "example": 1,
+                                "maxLength": 20,
+                                "type": "string"
+                            },
+                            "PhoneNumber": {
+                                "example": "9885 4589",
+                                "maxLength": 50,
+                                "type": "string"
+                            },
+                            "PhoneType": {
+                                "description": "The phone type",
+                                "enum": [
+                                    "DEFAULT",
+                                    "DDI",
+                                    "MOBILE",
+                                    "FAX"
+                                ],
+                                "example": "DDI",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "PurchasesDefaultAccountCode": {
+                    "description": "The default purchases account code for contacts",
+                    "example": 420,
+                    "type": "string"
+                },
+                "PurchasesTrackingCategories": {
+                    "items": {
+                        "properties": {
+                            "Name": {
+                                "type": "string"
+                            },
+                            "Option": {
+                                "type": "string"
+                            },
+                            "TrackingCategoryID": {
+                                "format": "uuid",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "SalesDefaultAccountCode": {
+                    "description": "The default sales account code for contacts",
+                    "example": 200,
+                    "type": "string"
+                },
+                "SalesTrackingCategories": {
+                    "items": {
+                        "properties": {
+                            "Name": {
+                                "type": "string"
+                            },
+                            "Option": {
+                                "type": "string"
+                            },
+                            "TrackingCategoryID": {
+                                "format": "uuid",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "SkypeUserName": {
+                    "description": "Skype user name of contact",
+                    "example": "adamm",
+                    "type": "string"
+                },
+                "TaxNumber": {
+                    "description": "Tax number of contact – this is also known as the ABN (Australia), GST Number (New Zealand), VAT Number (UK) or Tax ID Number (US and global) in the Xero UI depending on which regionalized version of Xero you are using.",
+                    "example": "GB12345667",
+                    "maxLength": 50,
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Website": {
+                    "description": "Website address for contact",
+                    "example": "www.contact.com",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "XeroNetworkKey": {
+                    "description": "Store XeroNetworkKey for contacts.",
+                    "example": "J57MXL9Z3GULYFR9CUBSKZGVRTBCAL",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name"
+            ],
+            "type": "object"
+        }
+    }
+}

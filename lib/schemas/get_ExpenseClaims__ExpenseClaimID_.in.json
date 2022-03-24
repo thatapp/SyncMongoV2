@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "ExpenseClaimID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

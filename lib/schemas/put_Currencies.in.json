@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "Code": {
+                    "description": "3 letter alpha code for the currency",
+                    "example": "AUD",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Description": {
+                    "description": "Name of Currency",
+                    "example": "Australian Dollar",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

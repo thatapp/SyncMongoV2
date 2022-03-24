@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "Date": {
+            "required": false,
+            "type": "string"
+        },
+        "paymentsOnly": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

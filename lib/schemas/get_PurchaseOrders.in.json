@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "order": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "default": 1
+        },
+        "DateFrom": {
+            "required": false,
+            "type": "string",
+            "format": "date"
+        },
+        "DateTo": {
+            "required": false,
+            "type": "string",
+            "format": "date"
+        },
+        "Status": {
+            "required": false,
+            "type": "string"
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

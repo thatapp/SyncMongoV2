@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "order": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "where": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "includeArchived": {
+            "required": false,
+            "type": "boolean",
+            "default": true
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

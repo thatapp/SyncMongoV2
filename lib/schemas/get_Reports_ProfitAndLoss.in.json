@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "fromDate": {
+            "required": false,
+            "type": "string"
+        },
+        "toDate": {
+            "required": false,
+            "type": "string"
+        },
+        "trackingCategoryID": {
+            "required": false,
+            "type": "string"
+        },
+        "trackingOptionID": {
+            "required": false,
+            "type": "string"
+        },
+        "trackingCategoryID2": {
+            "required": false,
+            "type": "string"
+        },
+        "trackingOptionID2": {
+            "required": false,
+            "type": "string"
+        },
+        "standardLayout": {
+            "required": false,
+            "type": "boolean"
+        },
+        "paymentsOnly": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

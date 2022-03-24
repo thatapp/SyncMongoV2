@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "TrackingCategoryID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "TrackingOptionID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

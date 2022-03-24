@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "contactID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "date": {
+            "required": false,
+            "type": "string"
+        },
+        "fromDate": {
+            "required": false,
+            "type": "string"
+        },
+        "toDate": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

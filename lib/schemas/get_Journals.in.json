@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "paymentsOnly": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "default": 0
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

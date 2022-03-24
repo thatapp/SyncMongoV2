@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "FileName": {
+            "required": true,
+            "type": "string"
+        },
+        "ManualJournalID": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "Content": {
+                    "description": "The raw file content",
+                    "example": "23456238745623865897326457634259763425976342596",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Content"
+            ],
+            "type": "object"
+        }
+    }
+}

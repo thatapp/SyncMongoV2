@@ -1,0 +1,260 @@
+{
+    "type": "object",
+    "properties": {
+        "PurchaseOrderID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "properties": {
+                "AttentionTo": {
+                    "description": "The person that the delivery is going to",
+                    "example": "Adam",
+                    "type": "string"
+                },
+                "BrandingThemeID": {
+                    "description": "See BrandingThemes",
+                    "format": "uuid",
+                    "type": "string"
+                },
+                "Contact": {
+                    "properties": {
+                        "ContactID": {
+                            "description": "Xero identifier",
+                            "example": "cc04bc53-f094-4ed6-8b3e-67297c37fae0",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Name": {
+                            "description": "Full name of contact/organisation",
+                            "example": "Adam Moore",
+                            "maxLength": 255,
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "Name"
+                    ],
+                    "type": "object",
+                    "xml": {
+                        "name": "Contact"
+                    }
+                },
+                "CurrencyCode": {
+                    "description": "The currency that purchase order has been raised in",
+                    "example": "AUD",
+                    "type": "string"
+                },
+                "CurrencyRate": {
+                    "description": "The currency rate for a multicurrency purchase order. As no rate can be specified, the XE.com day rate is used.",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "Date": {
+                    "description": "Date purchase order was issued – YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation",
+                    "format": "date",
+                    "type": "string"
+                },
+                "DeliveryAddress": {
+                    "description": "The address the goods are to be delivered to",
+                    "example": "23 Main Street, Central City, Marineville,1234",
+                    "type": "string"
+                },
+                "DeliveryDate": {
+                    "description": "Date the goods are to be delivered – YYYY-MM-DD",
+                    "format": "date",
+                    "type": "string"
+                },
+                "DeliveryInstructions": {
+                    "description": "A free text feild for instructions (500 characters max)",
+                    "example": "Don't forget the secret knock",
+                    "type": "string"
+                },
+                "ExpectedArrivalDate": {
+                    "description": "The date the goods are expected to arrive.",
+                    "format": "date",
+                    "type": "string"
+                },
+                "HasAttachments": {
+                    "description": "boolean to indicate if a purchase order has an attachment",
+                    "readOnly": true,
+                    "type": "boolean"
+                },
+                "LineAmountTypes": {
+                    "default": "Exclusive",
+                    "description": "Line amounts are exclusive of tax by default if you don’t specify this element",
+                    "enum": [
+                        "Inclusive",
+                        "Exclusive",
+                        "NoTax"
+                    ],
+                    "type": "string"
+                },
+                "LineItems": {
+                    "items": {
+                        "properties": {
+                            "AccountCode": {
+                                "description": "The account that the lineitem is being coded to",
+                                "example": 420,
+                                "type": "string"
+                            },
+                            "Description": {
+                                "description": "Description needs to be at least 1 char long. A line item with just a description (i.e no unit amount or quantity) can be created by specifying just a <Description> element that contains at least 1 character",
+                                "example": "Travel Expenses",
+                                "type": "string"
+                            },
+                            "DiscountRate": {
+                                "description": "Percentage discount being applied to a line item (only supported on ACCREC invoices – ACC PAY invoices and credit notes in Xero do not support discounts",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "ItemCode": {
+                                "description": "Code of the item",
+                                "example": 110,
+                                "type": "string"
+                            },
+                            "LineAmount": {
+                                "description": "The line amount reflects the discounted price if a DiscountRate has been used i.e LineAmount = Quantity * Unit Amount * ((100 – DiscountRate)/100)",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "LineItemID": {
+                                "description": "The Xero generated identifier for a LineItem. If LineItemIDs are not included with line items in an update request then the line items are deleted and recreated.",
+                                "format": "uuid",
+                                "readOnly": true,
+                                "type": "string"
+                            },
+                            "Quantity": {
+                                "description": "LineItem Quantity",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "TaxAmount": {
+                                "description": "The tax amount is auto calculated as a percentage of the line amount based on the tax rate. This value can be overriden if the calculated TaxAmount is not correct.",
+                                "format": "float",
+                                "type": "number"
+                            },
+                            "TaxType": {
+                                "description": "Used as an override if the default Tax Code for the selected <AccountCode> is not correct",
+                                "type": "string"
+                            },
+                            "Tracking": {
+                                "properties": {
+                                    "TrackingCategory": {
+                                        "items": {
+                                            "properties": {
+                                                "Name": {
+                                                    "description": "The name of the tracking category",
+                                                    "example": "Region",
+                                                    "type": "string"
+                                                },
+                                                "Option": {
+                                                    "description": "The name of the tracking option",
+                                                    "example": "North",
+                                                    "type": "string"
+                                                },
+                                                "TrackingCategoryID": {
+                                                    "description": "The identifier for the tracking category",
+                                                    "format": "uuid",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "type": "array"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "UnitAmount": {
+                                "description": "Lineitem unit amount. By default, unit amount will be rounded to two decimal places. You can opt in to use four decimal places by adding the querystring parameter unitdp=4 to your query. See the Rounding in Xero guide for more information.",
+                                "format": "float",
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "Description"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "PurchaseOrderID": {
+                    "description": "Xero generated unique identifier for purchase order",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "PurchaseOrderNumber": {
+                    "description": "Unique alpha numeric code identifying purchase order (when missing will auto-generate from your Organisation Invoice Settings)",
+                    "example": "PO-123",
+                    "type": "string"
+                },
+                "Reference": {
+                    "description": "Additional reference number",
+                    "example": "ABC123",
+                    "type": "string"
+                },
+                "SentToContact": {
+                    "default": false,
+                    "description": "Boolean to set whether the purchase order should be marked as “sent”. This can be set only on purchase orders that have been approved or billed",
+                    "type": "boolean"
+                },
+                "Status": {
+                    "description": "Purchase Order Status Codes",
+                    "enum": [
+                        "DRAFT",
+                        "SUBMITTED",
+                        "AUTHORISED",
+                        "BILLED",
+                        "DELETED"
+                    ],
+                    "type": "string"
+                },
+                "SubTotal": {
+                    "description": "Total of purchase order excluding taxes",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "Telephone": {
+                    "description": "The phone number for the person accepting the delivery",
+                    "example": "0800 1234 5678",
+                    "type": "string"
+                },
+                "Total": {
+                    "description": "Total of Purchase Order tax inclusive (i.e. SubTotal + TotalTax)",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "TotalDiscount": {
+                    "description": "Total of discounts applied on the purchase order line items",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "TotalTax": {
+                    "description": "Total tax on purchase order",
+                    "format": "float",
+                    "readOnly": true,
+                    "type": "number"
+                },
+                "UpdatedDateUTC": {
+                    "description": "Last modified date UTC format",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Contact",
+                "LineItems"
+            ],
+            "type": "object"
+        }
+    }
+}

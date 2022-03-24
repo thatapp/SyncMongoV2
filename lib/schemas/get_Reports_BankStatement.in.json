@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "bankAccountID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "fromDate": {
+            "required": false,
+            "type": "string"
+        },
+        "toDate": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

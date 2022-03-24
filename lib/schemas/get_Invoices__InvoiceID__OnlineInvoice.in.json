@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "InvoiceID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

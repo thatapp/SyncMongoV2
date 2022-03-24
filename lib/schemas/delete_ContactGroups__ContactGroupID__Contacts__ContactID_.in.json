@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "ContactGroupID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "ContactID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

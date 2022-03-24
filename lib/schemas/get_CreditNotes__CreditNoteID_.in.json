@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "CreditNoteID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "unitdp": {
+            "required": false,
+            "type": "integer",
+            "default": 4
+        }
+    }
+}

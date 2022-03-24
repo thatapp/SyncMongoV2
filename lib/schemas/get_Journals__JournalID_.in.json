@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "JournalID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

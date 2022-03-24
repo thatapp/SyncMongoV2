@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "ContactID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

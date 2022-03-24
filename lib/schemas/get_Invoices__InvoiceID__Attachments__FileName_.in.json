@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "FileName": {
+            "required": true,
+            "type": "string"
+        },
+        "InvoiceID": {
+            "required": true,
+            "type": "string"
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

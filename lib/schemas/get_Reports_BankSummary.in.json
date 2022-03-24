@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "fromDate": {
+            "required": false,
+            "type": "string"
+        },
+        "toDate": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

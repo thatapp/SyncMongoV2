@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "summarizeErrors": {
+            "required": false,
+            "type": "boolean",
+            "default": false
+        },
+        "requestBody": {
+            "properties": {
+                "ContactGroupID": {
+                    "description": "Unique identifier for the contact group",
+                    "example": "50e845c3-464e-4a6d-8951-8794317c7893",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Name": {
+                    "description": "Name of the contact group",
+                    "example": "Training",
+                    "type": "string"
+                },
+                "Status": {
+                    "description": "The status of the contact group",
+                    "enum": [
+                        "ACTIVE",
+                        "DELETED"
+                    ],
+                    "example": "ACTIVE",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name"
+            ],
+            "type": "object"
+        }
+    }
+}

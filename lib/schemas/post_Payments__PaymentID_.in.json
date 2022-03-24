@@ -1,0 +1,236 @@
+{
+    "type": "object",
+    "properties": {
+        "PaymentID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "properties": {
+                "Account": {
+                    "description": "The Account the payment was made from",
+                    "properties": {
+                        "AccountID": {
+                            "description": "Identifier for the account",
+                            "format": "uuid",
+                            "type": "string"
+                        },
+                        "Code": {
+                            "description": "Account Code",
+                            "example": 600,
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "Amount": {
+                    "description": "The amount of the payment. Must be less than or equal to the outstanding amount owing on the invoice",
+                    "format": "float",
+                    "type": "number"
+                },
+                "CreditNote": {
+                    "properties": {
+                        "AppliedAmount": {
+                            "description": "The total applied to the invoice",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        },
+                        "CreditNoteID": {
+                            "description": "Xero generated unique identifier",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "CreditNoteNumber": {
+                            "description": "ACCRECCREDIT – Unique alpha numeric code identifying credit note (when missing will auto-generate from your Organisation Invoice Settings)",
+                            "example": "CN-123",
+                            "type": "string"
+                        },
+                        "Date": {
+                            "description": "The date the credit note is issued YYYY-MM-DD. If the Date element is not specified then it will default to the current date based on the timezone setting of the organisation",
+                            "format": "date",
+                            "type": "string"
+                        },
+                        "Total": {
+                            "description": "The total of the Credit Note(subtotal + total tax)",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "CurrencyRate": {
+                    "description": "Exchange rate when payment is received. Only used for non base currency invoices and credit notes.",
+                    "format": "float",
+                    "type": "number"
+                },
+                "Date": {
+                    "description": "Date the payment is being made (YYYY-MM-DD)",
+                    "format": "date",
+                    "type": "string"
+                },
+                "Invoice": {
+                    "properties": {
+                        "Contact": {
+                            "properties": {
+                                "ContactID": {
+                                    "description": "Xero identifier",
+                                    "example": "cc04bc53-f094-4ed6-8b3e-67297c37fae0",
+                                    "format": "uuid",
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "description": "Full name of contact/organisation",
+                                    "example": "Adam Moore",
+                                    "maxLength": 255,
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "Name"
+                            ],
+                            "type": "object",
+                            "xml": {
+                                "name": "Contact"
+                            }
+                        },
+                        "InvoiceID": {
+                            "description": "Xero generated unique identifier for invoice",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "InvoiceNumber": {
+                            "description": "User defined alphanumeric code for identifying invoices. \n- Unique for ACCREC but not for ACCPAY. \n- For ACCREC it will auto-generate when left blank. \n- For ACCPAY it displays as Reference in the UI.\n",
+                            "example": "INV-123",
+                            "type": "string"
+                        },
+                        "Type": {
+                            "description": "The Invoice Type",
+                            "enum": [
+                                "ACCPAY",
+                                "ACCREC"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "type": "object",
+                    "xml": {
+                        "name": "Invoice"
+                    }
+                },
+                "IsReconciled": {
+                    "description": "An optional parameter for the payment. A boolean indicating whether you would like the payment to be created as reconciled when using PUT, or whether a payment has been reconciled when using GET",
+                    "type": "boolean"
+                },
+                "Overpayment": {
+                    "properties": {
+                        "AppliedAmount": {
+                            "description": "The total applied to the invoice",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        },
+                        "Date": {
+                            "description": "The date the overpayment was made YYYY-MM-DD",
+                            "format": "date",
+                            "type": "string"
+                        },
+                        "OverpaymentID": {
+                            "description": "Xero generated unique identifier",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Total": {
+                            "description": "The total of the Overpayment (subtotal + total tax)",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        }
+                    },
+                    "type": "object",
+                    "xml": {
+                        "name": "Overpayment"
+                    }
+                },
+                "PaymentID": {
+                    "description": "The Xero identifier for an Payment",
+                    "format": "uuid",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "PaymentType": {
+                    "description": "The Payment Type.",
+                    "enum": [
+                        "ACCRECPAYMENT",
+                        "ACCPAYPAYMENT",
+                        "ARCREDITPAYMENT",
+                        "APCREDITPAYMENT",
+                        "AROVERPAYMENTPAYMENT",
+                        "ARPREPAYMENTPAYMENT",
+                        "APPREPAYMENTPAYMENT",
+                        "APOVERPAYMENTPAYMENT"
+                    ],
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Prepayment": {
+                    "properties": {
+                        "AppliedAmount": {
+                            "description": "The total applied to the invoice",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        },
+                        "Date": {
+                            "description": "The date the prepayment is issued YYYY-MM-DD.",
+                            "format": "date",
+                            "type": "string"
+                        },
+                        "PrepaymentID": {
+                            "description": "Xero generated unique identifier",
+                            "format": "uuid",
+                            "readOnly": true,
+                            "type": "string"
+                        },
+                        "Total": {
+                            "description": "The total of the Prepayment (subtotal + total tax)",
+                            "format": "float",
+                            "readOnly": true,
+                            "type": "number"
+                        }
+                    },
+                    "type": "object",
+                    "xml": {
+                        "name": "Prepayment"
+                    }
+                },
+                "Reference": {
+                    "description": "An optional description for the payment",
+                    "example": "Direct Debit",
+                    "type": "string"
+                },
+                "Status": {
+                    "description": "The status of the payment.",
+                    "enum": [
+                        "AUTHORISED",
+                        "DELETED"
+                    ],
+                    "type": "string"
+                },
+                "UpdatedDateUTC": {
+                    "description": "UTC timestamp of last update to the payment",
+                    "format": "date-time",
+                    "readOnly": true,
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

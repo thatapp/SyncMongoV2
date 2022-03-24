@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "CreditNoteID": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "properties": {
+                "AppliedAmount": {
+                    "description": "the amount being applied to the invoice",
+                    "format": "float",
+                    "type": "number"
+                },
+                "Date": {
+                    "description": "The date the prepayment is applied YYYY-MM-DD (read-only). This will be the latter of the invoice date and the prepayment date.",
+                    "format": "date",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "Invoice": {
+                    "properties": {
+                        "InvoiceID": {
+                            "format": "uuid",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "required": [
+                "Invoice",
+                "AppliedAmount",
+                "Date"
+            ],
+            "type": "object"
+        }
+    }
+}

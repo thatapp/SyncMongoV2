@@ -3238,7 +3238,7 @@
         },
         "get_single_files": {
             "main": "./lib/actions/get_single_file.js",
-            "title": "GET files",
+            "title": "GET a file",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3382,7 +3382,7 @@
         },
         "put_folder": {
             "main": "./lib/actions/put_folder.js",
-            "title": "Create Folder",
+            "title": "Update Folder",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3398,7 +3398,7 @@
         },
         "delete_folder": {
             "main": "./lib/actions/delete_folder.js",
-            "title": "Create Folder",
+            "title": "Delete Folder",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",

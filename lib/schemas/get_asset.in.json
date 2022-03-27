@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "assetId": {
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+        },
+        "status": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "page": {
+            "required": false,
+            "type": "string",
+            "default": "1"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "orderBy": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "sortDirection": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "filterBy": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        }
+    }
+}

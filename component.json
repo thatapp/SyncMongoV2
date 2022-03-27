@@ -3107,6 +3107,54 @@
                     "type": "object"
                 }
             }
+        },
+        "get Asset": {
+            "main": "./lib/actions/get_asset.js",
+            "title": "Get an Asset",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_asset.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Create Asset": {
+            "main": "./lib/actions/create_asset.js",
+            "title": "Create Asset",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_asset.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Asset_Settings": {
+            "main": "./lib/actions/asset_setting.js",
+            "title": "Create Asset",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/asset_setting.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
         }
         
     }

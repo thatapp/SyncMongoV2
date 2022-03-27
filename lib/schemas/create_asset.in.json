@@ -1,0 +1,84 @@
+{
+    "type": "object",
+    "properties": {
+        "assetName": {
+            "required": true,
+            "type": "string"
+        },
+        "assetNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "purchaseDate": {
+            "required": false,
+            "type": "string"
+        },
+        "purchasePrice": {
+            "required": false,
+            "type": "number"
+        },
+        "warrantyExpiryDate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "serialNumber": {
+            "required": false,
+            "type": "string"
+        },
+        "assetStatus": {
+            "required": false,
+            "type": "string"
+        },
+        "bookDepreciationSettings": {
+            "required": false,
+            "type": "object",
+            "properties": {
+                "depreciationMethod": {
+                    "type": "string",
+                    "required": false
+                },
+                "averagingMethod": {
+                    "type": "string",
+                    "required": false
+                },
+                "depreciationRate": {
+                    "type": "number",
+                    "required": false
+                },
+                "depreciationCalculationMethod": {
+                    "type": "string",
+                    "required": false
+                }
+            }
+        },
+        "bookDepreciationDetail": {
+            "required": false,
+            "type": "object",
+            "properties": {
+                "currentCapitalGain": {
+                    "type": "number",
+                    "required": false
+                },
+                "currentGainLoss": {
+                    "type": "number",
+                    "required": false
+                },
+                "depreciationStartDate": {
+                    "type": "string",
+                    "required": false,
+                    "format": "date-time",
+                    "default": "2009-11-12T00:00:00Z"
+                },
+                "priorAccumDepreciationAmount": {
+                    "type": "number",
+                    "required": false
+                },
+                "currentAccumDepreciationAmount": {
+                    "type": "number",
+                    "required": false
+                }
+            }
+        }
+    }
+}

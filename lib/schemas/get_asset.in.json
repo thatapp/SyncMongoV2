@@ -3,38 +3,31 @@
     "properties": {
         "assetId": {
             "required": false,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "status": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "page": {
             "required": false,
-            "type": "string",
-            "default": "1"
+            "type": "string"
         },
         "pageSize": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "orderBy": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "sortDirection": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "filterBy": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         }
     }
 }

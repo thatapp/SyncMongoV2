@@ -3,13 +3,11 @@
     "properties": {
         "FileId": {
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "FolderId": {
             "required": false,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "name": {
             "required": false,

@@ -3,13 +3,11 @@
     "properties": {
         "fileId": {
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "ObjectId": {
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "ObjectGroup": {
             "required": true,

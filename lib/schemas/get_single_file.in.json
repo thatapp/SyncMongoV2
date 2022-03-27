@@ -3,23 +3,19 @@
     "properties": {
         "FileId": {
             "required": false,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         },
         "page": {
             "required": false,
-            "type": "string",
-            "default": "1"
+            "type": "string"
         },
         "pageSize": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "sort": {
             "required": false,
-            "type": "string",
-            "default": ""
+            "type": "string"
         }
     }
 }

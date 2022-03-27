@@ -3,8 +3,7 @@
     "properties": {
         "FileId": {
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
         }
     }
 }

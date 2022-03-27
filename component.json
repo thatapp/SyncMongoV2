@@ -3108,7 +3108,7 @@
                 }
             }
         },
-        "get Asset": {
+        "get_Asset": {
             "main": "./lib/actions/get_asset.js",
             "title": "Get an Asset",
             "fields": {
@@ -3124,7 +3124,7 @@
                 }
             }
         },
-        "Create Asset": {
+        "create_Asset": {
             "main": "./lib/actions/create_asset.js",
             "title": "Create Asset",
             "fields": {
@@ -3140,7 +3140,7 @@
                 }
             }
         },
-        "Asset_Settings": {
+        "asset_Settings": {
             "main": "./lib/actions/asset_setting.js",
             "title": "Create Asset",
             "fields": {

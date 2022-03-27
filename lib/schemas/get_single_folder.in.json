@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "FolderId": {
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+        },
+        "sort": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        }
+    }
+}

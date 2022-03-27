@@ -3155,7 +3155,262 @@
                     "type": "object"
                 }
             }
+        },
+        "get_file_associations": {
+            "main": "./lib/actions/get_file_association.js",
+            "title": "GET the associations for a file",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_file_association.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_file_associations_of_object": {
+            "main": "./lib/actions/get_file_association_of_object.js",
+            "title": "Get the associations for an object",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_file_association_of_object.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_file_associations": {
+            "main": "./lib/actions/post_file_association.js",
+            "title": "GET the associations for a file",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_file_association.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_file_associations": {
+            "main": "./lib/actions/delete_file_association.js",
+            "title": "Delete file associations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_file_association.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_files": {
+            "main": "./lib/actions/get_file.js",
+            "title": "GET files",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_file.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_single_files": {
+            "main": "./lib/actions/get_single_file.js",
+            "title": "GET files",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_single_file.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_file_content": {
+            "main": "./lib/actions/get_file_content.js",
+            "title": "GET file content",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_file_content.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_files": {
+            "main": "./lib/actions/post_files.js",
+            "title": "Upload File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_files.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_file": {
+            "main": "./lib/actions/put_file.js",
+            "title": "Rename File and move to different folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_file.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_file": {
+            "main": "./lib/actions/delete_file.js",
+            "title": "Delete File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_file.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_folder": {
+            "main": "./lib/actions/get_folder.js",
+            "title": "GET Folders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_folder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_single_folder": {
+            "main": "./lib/actions/get_single_folder.js",
+            "title": "GET a Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_single_folder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_inbox": {
+            "main": "./lib/actions/get_inbox.js",
+            "title": "GET Inbox",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_inbox.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_folder": {
+            "main": "./lib/actions/post_folder.js",
+            "title": "Create Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_folder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_folder": {
+            "main": "./lib/actions/put_folder.js",
+            "title": "Create Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_folder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_folder": {
+            "main": "./lib/actions/delete_folder.js",
+            "title": "Create Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_folder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
         }
-        
     }
 }

@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "fileId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "ObjectId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "ObjectGroup": {
+            "required": true,
+            "type": "object"
+        }
+    }
+}

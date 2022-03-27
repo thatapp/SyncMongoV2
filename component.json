@@ -3156,7 +3156,7 @@
                 }
             }
         },
-        "get_file_associations": {
+        "get_file_association": {
             "main": "./lib/actions/get_file_association.js",
             "title": "GET the associations for a file",
             "fields": {
@@ -3172,7 +3172,7 @@
                 }
             }
         },
-        "get_file_associations_of_object": {
+        "get_file_association_of_object": {
             "main": "./lib/actions/get_file_association_of_object.js",
             "title": "Get the associations for an object",
             "fields": {
@@ -3188,7 +3188,7 @@
                 }
             }
         },
-        "post_file_associations": {
+        "post_file_association": {
             "main": "./lib/actions/post_file_association.js",
             "title": "Create associations for a file",
             "fields": {
@@ -3204,7 +3204,7 @@
                 }
             }
         },
-        "delete_file_associations": {
+        "delete_file_association": {
             "main": "./lib/actions/delete_file_association.js",
             "title": "Delete file associations",
             "fields": {
@@ -3220,7 +3220,7 @@
                 }
             }
         },
-        "get_files": {
+        "get_file": {
             "main": "./lib/actions/get_file.js",
             "title": "GET files",
             "fields": {
@@ -3236,7 +3236,7 @@
                 }
             }
         },
-        "get_single_files": {
+        "get_single_file": {
             "main": "./lib/actions/get_single_file.js",
             "title": "GET a file",
             "fields": {
@@ -3268,7 +3268,7 @@
                 }
             }
         },
-        "post_files": {
+        "post_file": {
             "main": "./lib/actions/post_files.js",
             "title": "Upload File",
             "fields": {

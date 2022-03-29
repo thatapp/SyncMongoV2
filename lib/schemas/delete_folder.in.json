@@ -3,7 +3,8 @@
     "properties": {
         "FolderId": {
             "required": true,
-            "type": "string"
+            "type": "string",
+            "format": "uuid"
         }
     }
 }

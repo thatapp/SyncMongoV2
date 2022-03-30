@@ -3156,9 +3156,9 @@
                 }
             }
         },
-        "get_file": {
-            "main": "./lib/actions/get_file.js",
-            "title": "GET files",
+        "get_file_association_of_object": {
+            "main": "./lib/actions/get_file_association_of_object.js",
+            "title": "Get the associations for an object",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3166,7 +3166,7 @@
                 }
             },
             "metadata": {
-                "in": "./lib/schemas/get_file.in.json",
+                "in": "./lib/schemas/get_file_association_of_object.in.json",
                 "out": {
                     "type": "object"
                 }

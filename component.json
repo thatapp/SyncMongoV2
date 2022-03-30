@@ -3411,6 +3411,406 @@
                     "type": "object"
                 }
             }
+        },
+        "get_payroll_AU_Employee": {
+            "main": "./lib/actions/get_payroll_AU_Employee.js",
+            "title": "GET AU_Employee",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_payroll_AU_Employee.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_payroll_AU_Employee_EmployeeId": {
+            "main": "./lib/actions/get_payroll_AU_Employee_EmployeeId.js",
+            "title": "GET AU_Employee by EmployeeId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_payroll_AU_Employee_EmployeeId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Employee_EmployeeId": {
+            "main": "./lib/actions/create_Payroll_AU_Employee_EmployeeId.js",
+            "title": "Create AU Employee",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Employee_EmployeeId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Leave_Application": {
+            "main": "./lib/actions/get_Payroll_AU_Leave_Application.js",
+            "title": "GET LeaveApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Leave_Application.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Leave_Application_BY_LeaveApplicationID": {
+            "main": "./lib/actions/get_Payroll_AU_Leave_Application_BY_LeaveApplicationID.js",
+            "title": "GET LeaveApplications By LeaveApplicationID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Leave_Application_BY_LeaveApplicationID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Leave_Application_BY_LeaveApplication": {
+            "main": "./lib/actions/create_Payroll_AU_Leave_Application_BY_LeaveApplication.js",
+            "title": "Create LeaveApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Leave_Application_BY_LeaveApplication.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Pay_Items": {
+            "main": "./lib/actions/get_Payroll_AU_Pay_Items.js",
+            "title": "GET Pay Items",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Pay_Items.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Pay_Items": {
+            "main": "./lib/actions/create_Payroll_AU_Pay_Items.js",
+            "title": "Create Pay Items",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Pay_Items.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Pay_Runs": {
+            "main": "./lib/actions/get_Payroll_AU_Pay_Runs.js",
+            "title": "GET Pay Runs",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Pay_Runs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Pay_Runs_By_PayRunID": {
+            "main": "./lib/actions/get_Payroll_AU_Pay_Runs_By_PayRunID.js",
+            "title": "GET Pay Run By PayRunID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Pay_Runs_By_PayRunID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Pay_Runs": {
+            "main": "./lib/actions/create_Payroll_AU_Pay_Runs.js",
+            "title": "Create Pay Runs",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Pay_Runs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_PayrollCalendar": {
+            "main": "./lib/actions/get_Payroll_AU_PayrollCalendar.js",
+            "title": "GET PayrollCalendar",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_PayrollCalendar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_PayrollCalendar_By_PayrollCalendarID": {
+            "main": "./lib/actions/get_Payroll_AU_PayrollCalendar_By_PayrollCalendarID.js",
+            "title": "GET PayrollCalendar By PayrollCalendarID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_PayrollCalendar_By_PayrollCalendarID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_PayrollCalendar": {
+            "main": "./lib/actions/create_Payroll_AU_PayrollCalendar.js",
+            "title": "Create PayrollCalendar",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_PayrollCalendar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Payslip": {
+            "main": "./lib/actions/get_Payroll_AU_Payslip.js",
+            "title": "GET Payslip",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Payslip.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Payslip_By_PayslipID": {
+            "main": "./lib/actions/get_Payroll_AU_Payslip_By_PayslipID.js",
+            "title": "GET Payslip By PayslipID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Payslip_By_PayslipID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Payslip": {
+            "main": "./lib/actions/create_Payroll_AU_Payslip.js",
+            "title": "Create Payslip",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Payslip.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Payroll_AU_Settings": {
+            "main": "./lib/actions/Payroll_AU_Settings.js",
+            "title": "GET Payslip",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Payroll_AU_Settings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Payroll_AU_SuperFundProducts": {
+            "main": "./lib/actions/Payroll_AU_SuperFundProducts.js",
+            "title": "GET SuperFundProducts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Payroll_AU_SuperFundProducts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_SuperFunds": {
+            "main": "./lib/actions/get_Payroll_AU_SuperFunds.js",
+            "title": "GET SuperFunds",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_SuperFunds.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_SuperFunds_By_SuperFundID": {
+            "main": "./lib/actions/get_Payroll_AU_SuperFunds_By_SuperFundID.js",
+            "title": "GET SuperFunds By SuperFundID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_SuperFunds_By_SuperFundID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_SuperFunds": {
+            "main": "./lib/actions/create_Payroll_AU_SuperFunds.js",
+            "title": "Create SuperFund",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_SuperFunds.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Timesheets": {
+            "main": "./lib/actions/get_Payroll_AU_Timesheets.js",
+            "title": "GET Timesheets",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Timesheets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_AU_Timesheets_By_SuperFundID": {
+            "main": "./lib/actions/get_Payroll_AU_Timesheets_By_TimesheetID.js",
+            "title": "GET Timesheets By TimesheetID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_AU_Timesheets_By_TimesheetID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_AU_Timesheets": {
+            "main": "./lib/actions/create_Payroll_AU_Timesheets.js",
+            "title": "Create Timesheet",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_AU_Timesheets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
         }
     }
 }

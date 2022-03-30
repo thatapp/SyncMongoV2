@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "LeaveApplicationID": {
+            "required": true,
+            "type": "string"
+        },
+        "If_Modified_Since": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        },
+        "page": {
+            "required": false,
+            "type": "string"
+        },
+        "order": {
+            "required": false,
+            "type": "string"
+        },
+        "where": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

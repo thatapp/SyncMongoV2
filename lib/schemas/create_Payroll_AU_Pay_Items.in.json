@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "EarningsRates": {
+            "required": true,
+            "type": "object"
+        },
+        "DeductionTypes": {
+            "required": true,
+            "type": "object"
+        },
+        "LeaveTypes": {
+            "required": true,
+            "type": "object"
+        },
+        "ReimbursementTypes": {
+            "required": true,
+            "type": "object"
+        }
+    }
+}

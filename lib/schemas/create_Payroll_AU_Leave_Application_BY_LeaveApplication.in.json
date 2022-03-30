@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "LeaveTypeID": {
+            "required": true,
+            "type": "string"
+        },
+        "Title": {
+            "required": true,
+            "type": "string"
+        },
+        "StartDate": {
+            "required": true,
+            "type": "string"
+        },
+        "EndDate": {
+            "required": true,
+            "type": "string"
+        },
+        "Description": {
+            "required": false,
+            "type": "string"
+        },
+        "LeavePeriods": {
+            "required": false,
+            "type": "object",
+            "properties": {
+                "NumberOfUnits": {
+                    "required": false,
+                    "type": "number"
+                },
+                "PayPeriodEndDate": {
+                    "required": false,
+                    "type": "string"
+                },
+                "PayPeriodStartDate": {
+                    "required": false,
+                    "type": "string"
+                },
+                "LeavePeriodStatus": {
+                    "required": false,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

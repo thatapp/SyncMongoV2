@@ -3172,9 +3172,9 @@
                 }
             }
         },
-        "post_file_association": {
-            "main": "./lib/actions/post_file_association.js",
-            "title": "Create associations for a file",
+        "delete_file_association": {
+            "main": "./lib/actions/delete_file_association.js",
+            "title": "Delete file associations",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3182,7 +3182,7 @@
                 }
             },
             "metadata": {
-                "in": "./lib/schemas/post_file_association.in.json",
+                "in": "./lib/schemas/delete_file_association.in.json",
                 "out": {
                     "type": "object"
                 }

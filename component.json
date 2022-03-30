@@ -3155,6 +3155,22 @@
                     "type": "object"
                 }
             }
+        },
+        "get_file_association": {
+            "main": "./lib/actions/get_file_association.js",
+            "title": "GET the associations for a file",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_file_association.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
         }
     }
 }

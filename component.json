@@ -3172,9 +3172,9 @@
                 }
             }
         },
-        "delete_file_association": {
-            "main": "./lib/actions/delete_file_association.js",
-            "title": "Delete file associations",
+        "get_file": {
+            "main": "./lib/actions/get_file.js",
+            "title": "GET files",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3182,7 +3182,7 @@
                 }
             },
             "metadata": {
-                "in": "./lib/schemas/delete_file_association.in.json",
+                "in": "./lib/schemas/get_file.in.json",
                 "out": {
                     "type": "object"
                 }

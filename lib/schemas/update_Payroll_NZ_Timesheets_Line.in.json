@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "TimesheetID": {
+            "required": true,
+            "type": "string"
+        },
+        "TimesheetLineID": {
+            "required": true,
+            "type": "string"
+        },
+        "EarningsRateID": {
+            "required": true,
+            "type": "string"
+        },
+        "NumberOfUnits": {
+            "required": true,
+            "type": "string"
+        },
+        "Date": {
+            "required": true,
+            "type": "string"
+        },
+        "TrackingItemID": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

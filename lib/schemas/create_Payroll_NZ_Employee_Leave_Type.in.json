@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "LeaveTypeID": {
+            "required": true,
+            "type": "string"
+        },
+        "ScheduleOfAccrual": {
+            "required": true,
+            "type": "object"
+        },
+        "OpeningBalance": {
+            "required": true,
+            "type": "number"
+        }
+    }
+}

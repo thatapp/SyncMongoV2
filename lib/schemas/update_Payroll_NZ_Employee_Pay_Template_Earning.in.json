@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "PayTemplateEarningID": {
+            "required": true,
+            "type": "string"
+        },
+        "earningsRateID": {
+            "required": true,
+            "type": "string"
+        },
+        "ratePerUnit": {
+            "required": false,
+            "type": "number"
+        },
+        "numberOfUnits": {
+            "required": false,
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },       
+        "salaryandwagesID": {
+            "required": true,
+            "type": "string"
+        },       
+        "page": {
+            "required": false,
+            "type": "string"
+        }        
+    }
+}

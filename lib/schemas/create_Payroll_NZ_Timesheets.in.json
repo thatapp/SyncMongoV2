@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "PayrollCalendarID": {
+            "required": true,
+            "type": "string"
+        },
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "StartDate": {
+            "required": true,
+            "type": "string"
+        },
+        "EndDate": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

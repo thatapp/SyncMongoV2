@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "TimesheetID": {
+            "required": true,
+            "type": "string"
+        },
+        "TimesheetLineID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "PayTemplateEarningID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

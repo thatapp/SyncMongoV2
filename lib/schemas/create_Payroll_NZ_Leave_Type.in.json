@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "Name": {
+            "required": true,
+            "type": "string"
+        },
+        "IsPaidLeave": {
+            "required": true,
+            "type": "boolean"
+        },
+        "ShowOnPayslip": {
+            "required": true,
+            "type": "boolean"
+        }
+    }
+}

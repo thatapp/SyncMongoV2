@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "category": {
+            "required": true,
+            "type": "string"
+        },
+        "liabilityAccountId": {
+            "required": true,
+            "type": "string"
+        },
+        "expenseAccountId": {
+            "required": true,
+            "type": "string"
+        },
+        "percentage": {
+            "required": true,
+            "type": "number"
+        },
+        "calculationTypeNZ": {
+            "required": true,
+            "type": "string"
+        },
+        "StandardAmount": {
+            "required": true,
+            "type": "number"
+        }
+    }
+}

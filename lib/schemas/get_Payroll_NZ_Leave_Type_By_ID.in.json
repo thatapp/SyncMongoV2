@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "leavetypeID": {
+            "required": true,
+            "type": "string"
+        },
+        "Page": {
+            "required": true,
+            "type": "number"
+        },
+        "ActiveOnly": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

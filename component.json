@@ -3780,9 +3780,9 @@
                 }
             }
         },
-        "get_Payroll_AU_Timesheets_By_SuperFundID": {
+        "get_Payroll_AU_Timesheets_By_TimesheetID": {
             "main": "./lib/actions/get_Payroll_AU_Timesheets_By_TimesheetID.js",
-            "title": "GET Timesheets By TimesheetID",
+            "title": "GET Timesheet By TimesheetID",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -3807,6 +3807,1062 @@
             },
             "metadata": {
                 "in": "./lib/schemas/create_Payroll_AU_Timesheets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Dedcution": {
+            "main": "./lib/actions/get_Payroll_NZ_Dedcution.js",
+            "title": "GET Payroll NZ Deduction",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Dedcution.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Dedcution_By_DeductionID": {
+            "main": "./lib/actions/get_Payroll_NZ_Dedcution_By_DeductionID.js",
+            "title": "GET Payroll NZ Deduction By ID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Dedcution_By_DeductionID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Deduction": {
+            "main": "./lib/actions/create_Payroll_NZ_Deduction.js",
+            "title": "Adds a deduction",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Deduction.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Earning_Rate": {
+            "main": "./lib/actions/get_Payroll_NZ_Earning_Rate.js",
+            "title": "GET Payroll NZ Earning Rates",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Earning_Rate.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Earning_Rate_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Earning_Rate_By_ID.js",
+            "title": "GET Payroll NZ Earning Rates By ID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Earning_Rate_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Earning_Rate": {
+            "main": "./lib/actions/create_Payroll_NZ_Earning_Rate.js",
+            "title": "Add an earnings rate",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Earning_Rate.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employee": {
+            "main": "./lib/actions/get_Payroll_NZ_Employee.js",
+            "title": "GET Payroll NZ Employees",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employee.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employee_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Employee_By_ID.js",
+            "title": "GET Payroll NZ Employee By ID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employee_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee.js",
+            "title": "Adds Payroll NZ employee",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employees_Leave": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Leave.js",
+            "title": "GET All Payroll NZ Employee leave",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Leave.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Leave": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Leave.js",
+            "title": "Create Payroll NZ Employee Leave",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Leave.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Payroll_NZ_Employee_Leave": {
+            "main": "./lib/actions/update_Payroll_NZ_Employee_Leave.js",
+            "title": "Update Payroll NZ Employee Leave",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Employee_Leave.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Payroll_NZ_Employee_Leave": {
+            "main": "./lib/actions/delete_Payroll_NZ_Employee_Leave.js",
+            "title": "Delete an employee Payroll NZ leave request",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Payroll_NZ_Employee_Leave.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employees_Leave_Periods": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Leave_Periods.js",
+            "title": "GET Payroll NZ Employee Leave Periods",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Leave_Periods.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employees_Leave_Setup": {
+            "main": "./lib/actions/create_Payroll_NZ_Employees_Leave_Setup.js",
+            "title": "create Payroll NZ Employee Leave Setup",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employees_Leave_Setup.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employees_Leave_Types": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Leave_Types.js",
+            "title": "GET Employee Leave Types Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Leave_Types.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Leave_Type": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Leave_Type.js",
+            "title": "Create Employee Leave Types Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Leave_Type.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employees_Opening_Balance": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Opening_Balance.js",
+            "title": "GET Opening Balances Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Opening_Balance.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Opening_Balance": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Opening_Balance.js",
+            "title": "Create Opening Balances Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Opening_Balance.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "get_Payroll_NZ_Employees_Pay_Templates": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Pay_Templates.js",
+            "title": "GET All Pay Templates Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Pay_Templates.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Pay_Template_Earning": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Earning_Template.js",
+            "title": "Create an Earnings Template Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Earning_Template.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "update_Payroll_NZ_Employee_Pay_Template_Earning": {
+            "main": "./lib/actions/update_Payroll_NZ_Employee_Pay_Template_Earning.js",
+            "title": "Update an Earnings Template Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Employee_Pay_Template_Earning.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "delete_Payroll_NZ_Employee_Pay_Template_Earning": {
+            "main": "./lib/actions/delete_Payroll_NZ_Employee_Pay_Template_Earning.js",
+            "title": "Delete an Earnings Template Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Payroll_NZ_Employee_Pay_Template_Earning.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employees_Tax": {
+            "main": "./lib/actions/get_Payroll_NZ_Employees_Tax.js",
+            "title": "GET Employee Tax Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employees_Tax.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Tax": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Tax.js",
+            "title": "Create Employee Tax Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Tax.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },           
+        "create_Payroll_NZ_Employment": {
+            "main": "./lib/actions/create_Payroll_NZ_Employment.js",
+            "title": "Create Employment Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Leave_Balances": {
+            "main": "./lib/actions/get_Payroll_NZ_Leave_Balances.js",
+            "title": "GET Leave Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Leave_Balances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Leave_Type": {
+            "main": "./lib/actions/get_Payroll_NZ_Leave_Type.js",
+            "title": "GET Leave Types Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Leave_Type.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Leave_Type_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Leave_Type_By_ID.js",
+            "title": "GET Leave Types By leavetypeID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Leave_Type_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Leave_Type": {
+            "main": "./lib/actions/create_Payroll_NZ_Leave_Type.js",
+            "title": "Create Leave Types Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Leave_Type.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },      
+        "get_Payroll_NZ_Pay_Run_Calendars": {
+            "main": "./lib/actions/get_Payroll_NZ_Pay_Run_Calendars.js",
+            "title": "GET Pay Run Calendars Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Pay_Run_Calendars.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Pay_Run_Calendars_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Pay_Run_Calendars_By_ID.js",
+            "title": "GET Pay Run Calendar By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Pay_Run_Calendars_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Pay_Run_Calendars": {
+            "main": "./lib/actions/create_Payroll_NZ_Pay_Run_Calendars.js",
+            "title": "Create Pay Run Calendar Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Pay_Run_Calendars.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },      
+        "get_Payroll_NZ_Employee_Payment_Method": {
+            "main": "./lib/actions/get_Payroll_NZ_Employee_Payment_Method.js",
+            "title": "GET Employee Payment Method Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employee_Payment_Method.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Payment_Method": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Payment_Method.js",
+            "title": "Create Employee Payment Method Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Payment_Method.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Payruns": {
+            "main": "./lib/actions/get_Payroll_NZ_Payruns.js",
+            "title": "GET Payruns Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Payruns.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Payruns_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Payruns_By_ID.js",
+            "title": "GET Payruns By PayrunID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Payruns_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Payruns": {
+            "main": "./lib/actions/create_Payroll_NZ_Payruns.js",
+            "title": "Create Payruns Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Payruns.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },  
+        "update_Payroll_NZ_Payruns": {
+            "main": "./lib/actions/update_Payroll_NZ_Payruns.js",
+            "title": "Update Payruns Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Payruns.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Payslip_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Payslip_By_ID.js",
+            "title": "GET Payslip By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Payslip_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Payslip_By_PayrunID": {
+            "main": "./lib/actions/get_Payroll_NZ_Payslip_By_PayrunID.js",
+            "title": "GET Payslip By PayrunID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Payslip_By_PayrunID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Payroll_NZ_Payslip": {
+            "main": "./lib/actions/update_Payroll_NZ_Payslip.js",
+            "title": "Update payslip Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Payslip.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Reimbursements": {
+            "main": "./lib/actions/get_Payroll_NZ_Reimbursements.js",
+            "title": "GET Reimbursements Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Reimbursements.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Reimbursements_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Reimbursements_By_ID.js",
+            "title": "GET Reimbursement By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Reimbursements_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Reimbursements": {
+            "main": "./lib/actions/create_Payroll_NZ_Reimbursements.js",
+            "title": "Create Reimbursement Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Reimbursements.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employee_Salary_And_Wages": {
+            "main": "./lib/actions/get_Payroll_NZ_Employee_Salary_And_Wages.js",
+            "title": "GET Employee Salary and Wages Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employee_Salary_And_Wages.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Employee_Salary_And_Wages_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Employee_Salary_And_Wages_By_ID.js",
+            "title": "GET Employee Salary and Wages By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Employee_Salary_And_Wages_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Employee_Salary_And_Wages": {
+            "main": "./lib/actions/create_Payroll_NZ_Employee_Salary_And_Wages.js",
+            "title": "Create Employee Salary and Wages Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Employee_Salary_And_Wages.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Payroll_NZ_Employee_Salary_And_Wages": {
+            "main": "./lib/actions/update_Payroll_NZ_Employee_Salary_And_Wages.js",
+            "title": "Update Employee Salary and Wages Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Employee_Salary_And_Wages.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Payroll_NZ_Employee_Salary_And_Wages": {
+            "main": "./lib/actions/delete_Payroll_NZ_Employee_Salary_And_Wages.js",
+            "title": "Delete Employee Salary and Wages Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Payroll_NZ_Employee_Salary_And_Wages.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Settings": {
+            "main": "./lib/actions/get_Payroll_NZ_Settings.js",
+            "title": "Get Settings Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Settings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Statutory_Deductions": {
+            "main": "./lib/actions/get_Payroll_NZ_Statutory_Deductions.js",
+            "title": "Get Statutory Deductions Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Statutory_Deductions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Statutory_Deductions_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Statutory_Deductions_By_ID.js",
+            "title": "Get Statutory Deductions By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Statutory_Deductions_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Superannuations": {
+            "main": "./lib/actions/get_Payroll_NZ_Superannuations.js",
+            "title": "GET Superannuations Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Superannuations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Superannuations_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Superannuations_By_ID.js",
+            "title": "GET Superannuations By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Superannuations_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Superannuations": {
+            "main": "./lib/actions/create_Payroll_NZ_Superannuations.js",
+            "title": "Create Superannuations Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Superannuations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Timesheets": {
+            "main": "./lib/actions/get_Payroll_NZ_Timesheets.js",
+            "title": "GET Timesheets Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Timesheets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Timesheets_By_ID": {
+            "main": "./lib/actions/get_Payroll_NZ_Timesheets_By_ID.js",
+            "title": "GET Timesheets By ID Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Timesheets_By_ID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Timesheets": {
+            "main": "./lib/actions/create_Payroll_NZ_Timesheets.js",
+            "title": "Create Timesheets Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Timesheets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payroll_NZ_Timesheets_Line": {
+            "main": "./lib/actions/create_Payroll_NZ_Timesheets_Line.js",
+            "title": "Create Timesheet Line Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payroll_NZ_Timesheets_Line.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Payroll_NZ_Timesheets_Line": {
+            "main": "./lib/actions/update_Payroll_NZ_Timesheets_Line.js",
+            "title": "Update Timesheet Line Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payroll_NZ_Timesheets_Line.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Payroll_NZ_Approve_Timesheet": {
+            "main": "./lib/actions/Payroll_NZ_Approve_Timesheet.js",
+            "title": "Approve Timesheet Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Payroll_NZ_Approve_Timesheet.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Payroll_NZ_Revert_Timesheet_To_Draft": {
+            "main": "./lib/actions/Payroll_NZ_Revert_Timesheet_To_Draft.js",
+            "title": "Revert Timesheet To Draft Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Payroll_NZ_Revert_Timesheet_To_Draft.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Payroll_NZ_Timesheet": {
+            "main": "./lib/actions/delete_Payroll_NZ_Timesheet.js",
+            "title": "Delete a Timesheet Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Payroll_NZ_Timesheet.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Payroll_NZ_Timesheet_Line": {
+            "main": "./lib/actions/delete_Payroll_NZ_Timesheet_Line.js",
+            "title": "Delete Timesheet Line Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Payroll_NZ_Timesheet_Line.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payroll_NZ_Tracking_Categories": {
+            "main": "./lib/actions/get_Payroll_NZ_Tracking_Categories.js",
+            "title": "GET Tracking Categories Payroll NZ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payroll_NZ_Tracking_Categories.in.json",
                 "out": {
                     "type": "object"
                 }

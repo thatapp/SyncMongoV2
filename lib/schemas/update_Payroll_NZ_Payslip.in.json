@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "EarningsLines": {
+            "required": true,
+            "type": "object"
+        },
+        "PayslipID": {
+            "required": true,
+            "type": "string"
+        },
+        "TimesheetEarningsLines": {
+            "required": true,
+            "type": "object"
+        },
+        "DeductionLines": {
+            "required": true,
+            "type": "object"
+        },
+        "LeaveAccrualLines": {
+            "required": true,
+            "type": "object"
+        },
+        "ReimbursementLines": {
+            "required": true,
+            "type": "object"
+        },
+        "SuperannuationLines": {
+            "required": true,
+            "type": "object"
+        },
+        "StatutoryDeductionLines": {
+            "required": true,
+            "type": "object"
+        },
+        "EmployeeTaxLines": {
+            "required": true,
+            "type": "object"
+        },
+        "EmployerTaxLines": {
+            "required": true,
+            "type": "object"
+        },
+        "GrossEarningsHistory": {
+            "required": true,
+            "type": "object"
+        }
+    }
+}

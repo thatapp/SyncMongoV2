@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "EarningsRateID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "payruncalendarID": {
+            "required": true,
+            "type": "string"
+        },
+        "Page": {
+            "required": false,
+            "type": "number"
+        }
+    }
+}

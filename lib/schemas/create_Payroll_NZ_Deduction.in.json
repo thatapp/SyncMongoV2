@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "DeductionName": {
+            "required": true,
+            "type": "string"
+        },
+        "DeductionCategory": {
+            "required": true,
+            "type": "string"
+        },
+        "LiabilityAccountId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

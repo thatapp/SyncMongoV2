@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "PayRunType": {
+            "required": true,
+            "type": "string"
+        },
+        "PayrollCalendarID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

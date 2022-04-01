@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "accountID": {
+            "required": true,
+            "type": "string"
+        },
+        "reimbursementCategory": {
+            "required": true,
+            "type": "string"
+        },
+        "calculationType": {
+            "required": true,
+            "type": "string"
+        },
+        "standardAmount": {
+            "required": false,
+            "type": "string"
+        },
+        "standardTypeOfUnits": {
+            "required": false,
+            "type": "string"
+        },
+        "standardRatePerUnit": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "TimesheetID": {
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "filter": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "sort": {
+            "required": false,
+            "type": "string",
+            "default": ""
+        },
+        "page": {
+            "required": false,
+            "type": "number",
+            "default": 4
+        },
+        "startDate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        },
+        "endDate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time",
+            "default": "2009-11-12T00:00:00Z"
+        }
+    }
+}

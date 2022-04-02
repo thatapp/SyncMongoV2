@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "Page": {
+            "required": false,
+            "type": "number"
+        }
+    }
+}

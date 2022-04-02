@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "StatutorySickLeaveID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

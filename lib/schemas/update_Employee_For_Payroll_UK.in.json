@@ -1,0 +1,59 @@
+{
+    "type": "object",
+    "properties": {
+        "Title": {
+            "required": true,
+            "type": "string"
+        },
+        "employeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "FirstName": {
+            "required": true,
+            "type": "string"
+        },
+        "LastName": {
+            "required": true,
+            "type": "string"
+        },
+        "DateOfBirth": {
+            "required": true,
+            "type": "string"
+        },
+        "Gender": {
+            "required": true,
+            "type": "string"
+        },
+        "Address": {
+            "required": true,
+            "type": "object",
+            "properties": {
+                "AddressLine1": {
+                    "required": true,
+                    "type": "string"
+                },
+                "City": {
+                    "required": true,
+                    "type": "string"
+                },
+                "PostCode": {
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },    
+        "Email": {
+            "required": false,
+            "type": "string"
+        },    
+        "PhoneNumber": {
+            "required": false,
+            "type": "string"
+        },
+        "IsOffPayrollWorker": {
+            "required": false,
+            "type": "boolean"
+        }
+    }
+}

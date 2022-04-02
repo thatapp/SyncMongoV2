@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "leaveTypeID": {
+            "required": true,
+            "type": "string"
+        },
+        "scheduleOfAccrual": {
+            "required": true,
+            "type": "string"
+        },
+        "hoursAccruedAnnually": {
+            "required": false,
+            "type": "number"
+        },
+        "maximumToAccrue": {
+            "required": false,
+            "type": "number"
+        },
+        "openingBalance": {
+            "required": false,
+            "type": "number"
+        },
+        "rateAccruedHourly": {
+            "required": false,
+            "type": "number"
+        }
+    }
+}

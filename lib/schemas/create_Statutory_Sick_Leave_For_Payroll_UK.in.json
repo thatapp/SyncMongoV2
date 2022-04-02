@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "LeaveTypeID": {
+            "required": true,
+            "type": "string"
+        },
+        "startDate": {
+            "required": true,
+            "type": "string"
+        },
+        "endDate": {
+            "required": true,
+            "type": "string"
+        },
+        "workPattern": {
+            "required": true,
+            "type": "array"
+        },
+        "isPregnancyRelated": {
+            "required": true,
+            "type": "boolean"
+        },
+        "sufficientNotice": {
+            "required": true,
+            "type": "boolean"
+        }
+    }
+}

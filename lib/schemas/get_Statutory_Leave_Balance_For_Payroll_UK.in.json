@@ -1,15 +1,15 @@
 {
     "type": "object",
     "properties": {
-        "page": {
-            "required": false,
-            "type": "number"
-        },
-        "status": {
-            "required": false,
+        "EmployeeID": {
+            "required": true,
             "type": "string"
         },
-        "payrunID": {
+        "leaveType": {
+            "required": true,
+            "type": "string"
+        },
+        "asOfDate": {
             "required": true,
             "type": "string"
         }

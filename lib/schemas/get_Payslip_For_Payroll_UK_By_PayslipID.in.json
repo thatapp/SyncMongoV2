@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "PayslipID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

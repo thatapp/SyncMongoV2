@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "employerPensionID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

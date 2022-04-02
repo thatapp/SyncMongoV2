@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "ActiveOnly": {
+            "required": false,
+            "type": "string"
+        },       
+        "page": {
+            "required": false,
+            "type": "string"
+        }        
+    }
+}

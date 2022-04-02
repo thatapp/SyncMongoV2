@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "EmployeeID": {
+            "required": true,
+            "type": "string"
+        },
+        "PayrollCalendarID": {
+            "required": true,
+            "type": "string"
+        },
+        "StartDate": {
+            "required": true,
+            "type": "string"
+        },
+        "EmployeeNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "NICategories": {
+            "required": true,
+            "type": "object",
+            "properties": {
+                "NICategory": {
+                    "required": true,
+                    "type": "string"
+                },
+                "StartDate": {
+                    "required": false,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

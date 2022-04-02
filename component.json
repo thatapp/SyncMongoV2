@@ -4867,6 +4867,1142 @@
                     "type": "object"
                 }
             }
+        },
+        "get_Dedcution_For_Payroll_UK": {
+            "main": "./lib/actions/get_Dedcution_For_Payroll_UK.js",
+            "title": "GET Deductions for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Dedcution_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Dedcution_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Dedcution_By_ID_For_Payroll_UK.js",
+            "title": "GET Deduction By ID for Payroll UK ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Dedcution_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Dedcution_For_Payroll_UK": {
+            "main": "./lib/actions/create_Dedcution_For_Payroll_UK.js",
+            "title": "Adds a deduction for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Dedcution_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Earning_Rate_For_Payroll_UK": {
+            "main": "./lib/actions/get_Earning_Rate_For_Payroll_UK.js",
+            "title": "GET Earning Rates for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Earning_Rate_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Earning_Rate_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Earning_Rate_By_ID_For_Payroll_UK.js",
+            "title": "GET Earning Rates By ID for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Earning_Rate_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Earning_Rate_For_Payroll_UK": {
+            "main": "./lib/actions/create_Earning_Rate_For_Payroll_UK.js",
+            "title": "Add an earnings rate for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Earning_Rate_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Earning_Orders_For_Payroll_UK": {
+            "main": "./lib/actions/get_Earning_Orders_For_Payroll_UK.js",
+            "title": "GET All Earnings Orders for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Earning_Orders_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Statutory_Deduction_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Statutory_Deduction_By_ID_For_Payroll_UK.js",
+            "title": "GET Statutory Deduction By ID for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Statutory_Deduction_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Opening_Balance_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Opening_Balance_For_Payroll_UK.js",
+            "title": "GET Employee Opening Balances for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Opening_Balance_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employees_Opening_Balance_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employees_Opening_Balance_For_Payroll_UK.js",
+            "title": "Create employee opening balances for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employees_Opening_Balance_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },     
+        "update_Employees_Opening_Balance_For_Payroll_UK": {
+            "main": "./lib/actions/update_Employees_Opening_Balance_For_Payroll_UK.js",
+            "title": "Update employee opening balances for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Employees_Opening_Balance_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employee_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employee_For_Payroll_UK.js",
+            "title": "GET Employees for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employee_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employee_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employee_By_ID_For_Payroll_UK.js",
+            "title": "GET Employee By ID for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employee_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employee_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employee_For_Payroll_UK.js",
+            "title": "Adds employee for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employee_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Employee_For_Payroll_UK": {
+            "main": "./lib/actions/update_Employee_For_Payroll_UK.js",
+            "title": "Update an employee for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Employee_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Leave_For_Payroll_UK.js",
+            "title": "GET All Employee leave for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Leave_By_LeaveID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Leave_By_LeaveID_For_Payroll_UK.js",
+            "title": "GET Employee leave By LeaveID For Payroll UL",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Leave_By_LeaveID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employees_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employees_Leave_For_Payroll_UK.js",
+            "title": "Create Employee Leave For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employees_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Employees_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/update_Employees_Leave_For_Payroll_UK.js",
+            "title": "Update Employee Leave for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Employees_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Employees_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/delete_Employees_Leave_For_Payroll_UK.js",
+            "title": "Delete an employee leave request for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Employees_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Leave_Balance_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Leave_Balance_For_Payroll_UK.js",
+            "title": "GET Employee Leave Balance for Payroll UK ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Leave_Balance_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Leave_Periods_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Leave_Periods_For_Payroll_UK.js",
+            "title": "GET Employee Leave Periods for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Leave_Periods_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Leave_Types_For__Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Leave_Types_For__Payroll_UK.js",
+            "title": "GET Employee Leave Types For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Leave_Types_For__Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employees_Leave_Types_For__Payroll_UK": {
+            "main": "./lib/actions/create_Employees_Leave_Types_For__Payroll_UK.js",
+            "title": "Create Employee Leave Types For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employees_Leave_Types_For__Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Pay_Templates_For_Payroll_UK": {
+            "main": "./lib/actions/get_Pay_Templates_For_Payroll_UK.js",
+            "title": "GET All Pay Templates for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Pay_Templates_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Pay_Templates_For_Payroll_UK": {
+            "main": "./lib/actions/create_Pay_Templates_For_Payroll_UK.js",
+            "title": "Create an Earnings Template For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Pay_Templates_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "create_Multiple_Pay_Templates_For_Payroll_UK": {
+            "main": "./lib/actions/create_Multiple_Pay_Templates_For_Payroll_UK.js",
+            "title": "Create Multiple Earnings Template For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Multiple_Pay_Templates_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "update_Pay_Templates_For_Payroll_UK": {
+            "main": "./lib/actions/update_Pay_Templates_For_Payroll_UK.js",
+            "title": "Update an Earnings Template For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Pay_Templates_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },        
+        "delete_Pay_Templates_For_Payroll_UK": {
+            "main": "./lib/actions/delete_Pay_Templates_For_Payroll_UK.js",
+            "title": "Delete an Earning Template For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Pay_Templates_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Statutory_Leave_Balance_For_Payroll_UK": {
+            "main": "./lib/actions/get_Statutory_Leave_Balance_For_Payroll_UK.js",
+            "title": "GET Statutory Leave Balance For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Statutory_Leave_Balance_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Statutory_Leave_Summary_For_Payroll_UK": {
+            "main": "./lib/actions/get_Statutory_Leave_Summary_For_Payroll_UK.js",
+            "title": "GET Statutory Leaves Summary For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Statutory_Leave_Summary_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Statutory_Sick_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/get_Statutory_Sick_Leave_For_Payroll_UK.js",
+            "title": "GET Statutory Sick Leaves For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Statutory_Sick_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Statutory_Sick_Leave_For_Payroll_UK": {
+            "main": "./lib/actions/create_Statutory_Sick_Leave_For_Payroll_UK.js",
+            "title": "Create Statutory Sick Leaves For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Statutory_Sick_Leave_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Tax_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Tax_For_Payroll_UK.js",
+            "title": "GET Employee Tax For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Tax_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Pension_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Pension_For_Payroll_UK.js",
+            "title": "GET Employee Pension For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Pension_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employees_Pension_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employees_Pension_By_ID_For_Payroll_UK.js",
+            "title": "GET Employee Pension By Id For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employees_Pension_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employees_Pension_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employees_Pension_For_Payroll_UK.js",
+            "title": "Create Employee Pension For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employees_Pension_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employment_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employment_For_Payroll_UK.js",
+            "title": "Create Employment For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employment_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Leave_Types_For_Payroll_UK": {
+            "main": "./lib/actions/get_Leave_Types_For_Payroll_UK.js",
+            "title": "GET Leave Types For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Leave_Types_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Leave_Types_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Leave_Types_By_ID_For_Payroll_UK.js",
+            "title": "GET Leave Type By ID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Leave_Types_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Leave_Types_For_Payroll_UK": {
+            "main": "./lib/actions/create_Leave_Types_For_Payroll_UK.js",
+            "title": "Create Employee Leave Types For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Leave_Types_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Pay_Run_Calendars_For_Payroll_UK": {
+            "main": "./lib/actions/get_Pay_Run_Calendars_For_Payroll_UK.js",
+            "title": "GET Pay Run Calendars For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Pay_Run_Calendars_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Pay_Run_Calendars_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Pay_Run_Calendars_By_ID_For_Payroll_UK.js",
+            "title": "GET Pay Run Calendar By ID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Pay_Run_Calendars_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Pay_Run_Calendars_For_Payroll_UK": {
+            "main": "./lib/actions/create_Pay_Run_Calendars_For_Payroll_UK.js",
+            "title": "Create Pay Run Calendar For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Pay_Run_Calendars_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payruns_For_Payroll_UK": {
+            "main": "./lib/actions/get_Payruns_For_Payroll_UK.js",
+            "title": "GET Payruns For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payruns_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payrun_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Payrun_By_ID_For_Payroll_UK.js",
+            "title": "GET Payruns By PayrunID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payrun_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payruns_For_Payroll_UK": {
+            "main": "./lib/actions/create_Payruns_For_Payroll_UK.js",
+            "title": "Create Payruns For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payruns_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },  
+        "update_Payruns_For_Payroll_UK": {
+            "main": "./lib/actions/update_Payruns_For_Payroll_UK.js",
+            "title": "Update Payruns For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Payruns_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payment_Method_For_Payroll_UK": {
+            "main": "./lib/actions/get_Payment_Method_For_Payroll_UK.js",
+            "title": "GET Payment Method for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payment_Method_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Payment_Method_For_Payroll_UK": {
+            "main": "./lib/actions/create_Payment_Method_For_Payroll_UK.js",
+            "title": "Create Payment Method For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Payment_Method_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payslip_For_Payroll_UK_By_PayslipID": {
+            "main": "./lib/actions/get_Payslip_For_Payroll_UK_By_PayslipID.js",
+            "title": "GET Payslip For Payroll UK By PayslipID",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payslip_For_Payroll_UK_By_PayslipID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Payslip_For_Payroll_UK_By_PayrunID": {
+            "main": "./lib/actions/get_Payslip_For_Payroll_UK_By_PayrunID.js",
+            "title": "GET Payslip For Payroll UK By PayrunID ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Payslip_For_Payroll_UK_By_PayrunID.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Reimbursements_For_Payroll_UK": {
+            "main": "./lib/actions/get_Reimbursements_For_Payroll_UK.js",
+            "title": "GET Reimbursements For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Reimbursements_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Reimbursements_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Reimbursements_By_ID_For_Payroll_UK.js",
+            "title": "GET Reimbursement By ID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Reimbursements_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Reimbursements_For_Payroll_UK": {
+            "main": "./lib/actions/create_Reimbursements_For_Payroll_UK.js",
+            "title": "Create Reimbursement For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Reimbursements_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employee_Salary_And_Wages_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employee_Salary_And_Wages_For_Payroll_UK.js",
+            "title": "GET Employee Salary and Wages For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employee_Salary_And_Wages_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Employee_Salary_And_Wages_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Employee_Salary_And_Wages_By_ID_For_Payroll_UK.js",
+            "title": "GET Employee Salary and Wages By ID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Employee_Salary_And_Wages_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Employee_Salary_And_Wages_For_Payroll_UK": {
+            "main": "./lib/actions/create_Employee_Salary_And_Wages_For_Payroll_UK.js",
+            "title": "Create Employee Salary and Wages For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Employee_Salary_And_Wages_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Employee_Salary_And_Wages_For_Payroll_UK": {
+            "main": "./lib/actions/update_Employee_Salary_And_Wages_For_Payroll_UK.js",
+            "title": "Update Employee Salary and Wages For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Employee_Salary_And_Wages_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Employee_Salary_And_Wages_For_Payroll_UK": {
+            "main": "./lib/actions/delete_Employee_Salary_And_Wages_For_Payroll_UK.js",
+            "title": "Delete Employee Salary and Wages For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Employee_Salary_And_Wages_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Settings_For_Payroll_UK": {
+            "main": "./lib/actions/get_Settings_For_Payroll_UK.js",
+            "title": "Get Settings For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Settings_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Timesheets_For_Payroll_UK": {
+            "main": "./lib/actions/get_Timesheets_For_Payroll_UK.js",
+            "title": "GET Timesheets For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Timesheets_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Timesheets_By_ID_For_Payroll_UK": {
+            "main": "./lib/actions/get_Timesheets_By_ID_For_Payroll_UK.js",
+            "title": "GET Timesheets By ID For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Timesheets_By_ID_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Timesheets_For_Payroll_UK": {
+            "main": "./lib/actions/create_Timesheets_For_Payroll_UK.js",
+            "title": "Create Timesheets For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Timesheets_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "create_Timesheets_Line_For_Payroll_UK": {
+            "main": "./lib/actions/create_Timesheets_Line_For_Payroll_UK.js",
+            "title": "Create Timesheet Line For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/create_Timesheets_Line_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "update_Timesheets_Line_For_Payroll_UK": {
+            "main": "./lib/actions/update_Timesheets_Line_For_Payroll_UK.js",
+            "title": "Update Timesheet Line For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/update_Timesheets_Line_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Approve_Timesheet_For_Payroll_UK": {
+            "main": "./lib/actions/Approve_Timesheet_For_Payroll_UK.js",
+            "title": "Approve Timesheet For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Approve_Timesheet_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Revert_Timesheet_To_Draft_For_Payroll_UK": {
+            "main": "./lib/actions/Revert_Timesheet_To_Draft_For_Payroll_UK.js",
+            "title": "Revert Timesheet To Draft For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Revert_Timesheet_To_Draft_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Timesheets_For_Payroll_UK": {
+            "main": "./lib/actions/delete_Timesheets_For_Payroll_UK.js",
+            "title": "Delete a Timesheet For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Timesheets_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_Timesheets_Line_For_Payroll_UK": {
+            "main": "./lib/actions/delete_Timesheets_Line_For_Payroll_UK.js",
+            "title": "Delete Timesheet Line for Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_Timesheets_Line_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_Tracking_Categories_For_Payroll_UK": {
+            "main": "./lib/actions/get_Tracking_Categories_For_Payroll_UK.js",
+            "title": "GET Tracking Categories For Payroll UK",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Tracking_Categories_For_Payroll_UK.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
         }
     }
 }

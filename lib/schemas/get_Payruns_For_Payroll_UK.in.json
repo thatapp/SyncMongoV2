@@ -8,10 +8,6 @@
         "status": {
             "required": false,
             "type": "string"
-        },
-        "payrunID": {
-            "required": true,
-            "type": "string"
         }
     }
 }

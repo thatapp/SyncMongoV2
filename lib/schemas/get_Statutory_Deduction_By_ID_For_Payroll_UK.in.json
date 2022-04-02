@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "EarningsOrderID": {
+            "required": true,
+            "type": "string"
+        },
+        "page": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

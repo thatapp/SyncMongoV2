@@ -1,9 +1,0 @@
-{
-    "type": "object",
-    "properties": {
-        "employeeID": {
-            "required": true,
-            "type": "string"
-        }
-    }
-}

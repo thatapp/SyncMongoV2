@@ -4,25 +4,23 @@
     "docsUrl": "",
     "url": "https://api.apis.guru/v2/specs/xero.com/2.0/swagger.json",
     "buildType":"docker",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "envVars": {},
     "credentials": {
         "fields": {
-            "server": {
-                "label": "Server",
-                "viewClass": "SelectView",
-                "model": [
-                    "https://api.xero.com/api.xro/2.0",
-                    "--- Custom URL"
-                ],
-                "required": true
-            },
-            "otherServer": {
-                "label": "Custom Server URL",
-                "viewClass": "TextFieldView"
-            }
+          "oauth": {
+            "label": "Authentication",
+            "viewClass": "OAuthFieldView",
+            "required": true
+          }
+        },
+        "oauth2": {
+          "client_id": "19CB1CBA697A4E4098589BCC55C3A59E",
+          "client_secret": "XPCJQgPjdd_wQSgatyCMzkyvpHd87SQ1rCH0H-vHVnzGTrNf",
+          "auth_uri": "https://login.xero.com/identity/connect/authorize",
+          "token_uri": "https://identity.xero.com/connect/token"
         }
-    },
+      },
     "triggers": {
         "startFlow": {
             "main": "./lib/triggers/startFlow.js",

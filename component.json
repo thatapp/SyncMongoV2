@@ -4,7 +4,7 @@
     "docsUrl": "",
     "url": "https://api.apis.guru/v2/specs/xero.com/2.0/swagger.json",
     "buildType":"docker",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "envVars": {},
     "credentials": {
         "fields": {
@@ -18,7 +18,8 @@
           "client_id": "19CB1CBA697A4E4098589BCC55C3A59E",
           "client_secret": "XPCJQgPjdd_wQSgatyCMzkyvpHd87SQ1rCH0H-vHVnzGTrNf",
           "auth_uri": "https://login.xero.com/identity/connect/authorize",
-          "token_uri": "https://identity.xero.com/connect/token"
+          "token_uri": "https://identity.xero.com/connect/token",
+          "scope": "openid"
         }
       },
     "triggers": {

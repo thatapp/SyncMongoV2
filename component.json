@@ -17,7 +17,7 @@
         "oauth2": {
           "client_id": "1143720693024BDCAA3DEE15C1063AD6",
           "client_secret": "PvMYWKyVEqGQPIDj2ky9oaib0TbzhTDsWdwBtSJdWqhzNa5n",
-          "scope": "openid profile email accounting.transactions",
+          "scope": "openid",
           "auth_uri": "https://login.xero.com/identity/connect/authorize",
           "token_uri": "https://identity.xero.com/connect/token"
         }

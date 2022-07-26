@@ -15,10 +15,17 @@
           }
         },
         "oauth2": {
-          "client_id": "1143720693024BDCAA3DEE15C1063AD6",
-          "client_secret": "PvMYWKyVEqGQPIDj2ky9oaib0TbzhTDsWdwBtSJdWqhzNa5n",
+          "client_id": "{{XERO_APP_ID}}",
+          "client_secret": "{{XERO_APP_SECRET}}",
           "auth_uri": "https://login.xero.com/identity/connect/authorize?scope=openid profile email accounting.transactions",
-          "token_uri": "https://identity.xero.com/connect/token"
+          "token_uri": "https://identity.xero.com/connect/token",
+          "scopes": [
+            "https://login.xero.com/identity/connect/authorize?scope=openid",
+            "https://login.xero.com/identity/connect/authorize?scope=profile",
+            "https://login.xero.com/identity/connect/authorize?scope=email",
+            "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions",
+            "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions.read"
+          ]
         }
       },
     "triggers": {
@@ -1386,7 +1393,7 @@
         },
         "get_Organisation__ShortCode_": {
             "main": "./lib/actions/get_Organisation__ShortCode_.js",
-            "title": "Retrieve Organisation details",
+            "title": "Retrieve Organisation shortcode",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",

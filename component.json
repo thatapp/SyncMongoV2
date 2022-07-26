@@ -3,31 +3,31 @@
     "description": "# Introduction\nThe Xero Accounting API is a RESTful web service and uses the OAuth (v1.0a) protocol to authenticate 3rd party applications. The Accounting API exposes accounting and related functions of the main Xero application and can be used for a variety of purposes such as creating transactions like invoices and credit notes, right through to extracting accounting data via our reports endpoint.\n",
     "docsUrl": "",
     "url": "https://api.apis.guru/v2/specs/xero.com/2.0/swagger.json",
-    "buildType":"docker",
-    "version": "1.1.2",
+    "buildType": "docker",
+    "version": "1.1.3",
     "envVars": {},
     "credentials": {
         "fields": {
-          "oauth": {
-            "label": "Authentication",
-            "viewClass": "OAuthFieldView",
-            "required": true
-          }
+            "oauth": {
+                "label": "Authentication",
+                "viewClass": "OAuthFieldView",
+                "required": true
+            }
         },
         "oauth2": {
-          "client_id": "{{XERO_APP_ID}}",
-          "client_secret": "{{XERO_APP_SECRET}}",
-          "auth_uri": "https://login.xero.com/identity/connect/authorize?scope=openid profile email accounting.transactions",
-          "token_uri": "https://identity.xero.com/connect/token",
-          "scopes": [
-            "https://login.xero.com/identity/connect/authorize?scope=openid",
-            "https://login.xero.com/identity/connect/authorize?scope=profile",
-            "https://login.xero.com/identity/connect/authorize?scope=email",
-            "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions",
-            "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions.read"
-          ]
+            "client_id": "{{XERO_APP_ID}}",
+            "client_secret": "{{XERO_APP_SECRET}}",
+            "auth_uri": "https://login.xero.com/identity/connect/authorize?scope=openid profile email accounting.transactions",
+            "token_uri": "https://identity.xero.com/connect/token",
+            "scopes": [
+                "https://login.xero.com/identity/connect/authorize?scope=openid",
+                "https://login.xero.com/identity/connect/authorize?scope=profile",
+                "https://login.xero.com/identity/connect/authorize?scope=email",
+                "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions",
+                "https://login.xero.com/identity/connect/authorize?scope=accounting.transactions.read"
+            ]
         }
-      },
+    },
     "triggers": {
         "startFlow": {
             "main": "./lib/triggers/startFlow.js",
@@ -106,7 +106,6 @@
                 }
             }
         },
-        
         "delete_Accounts__AccountID_": {
             "main": "./lib/actions/delete_Accounts__AccountID_.js",
             "title": "Delete an account",

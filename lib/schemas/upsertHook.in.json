@@ -1,15 +1,15 @@
 {
     "type": "object",
     "properties": {
-        "ContactGroupID": {
+        "item_id": {
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "number",
+            "title": "item_id"
         },
-        "ContactID": {
+        "outcome": {
             "required": true,
             "type": "string",
-            "format": "uuid"
+            "title": "outcome"
         }
     }
 }

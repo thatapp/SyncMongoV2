@@ -1,8 +1,9 @@
 {
-    "title": "TestGround Component",
-    "description": "Upsert Hook logs and consolidated hooks",
+    "title": "TestGrount Component",
+    "description": "A play ground component to practice design pattern",
     "docsUrl": "",
     "buildType": "docker",
+    "version": "1.0.1",
     "envVars": {
         "API_KEY": {
             "required": true,

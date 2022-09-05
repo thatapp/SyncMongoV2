@@ -3,7 +3,17 @@
     "description": "Upsert Hook logs and consolidated hooks",
     "docsUrl": "",
     "buildType": "docker",
-    "envVars": {},
+    "envVars": {
+        "API_KEY": {
+            "required": true,
+            "description": "Kindly enter the API Key for the MongoDB Data APIs to be functional"
+        }
+    },
+    "credentials": {
+        "mongo_credential": {
+            "apiKey": "{{API_KEY}}"
+        }
+    },
     "triggers": {
         "startFlow": {
             "main": "./lib/triggers/startFlow.js",
@@ -13,11 +23,11 @@
         }
     },
     "actions": {
-        "upsertHook": {
-            "main": "./lib/actions/upsertHook.js",
+        "getUsers": {
+            "main": "./lib/actions/getUsers.js",
             "title": "Upsert Hook",
             "metadata": {
-                "in": "./lib/schemas/upsertHook.in.json"
+                "in": "./lib/schemas/getUsers.in.json"
             }
         }
     }

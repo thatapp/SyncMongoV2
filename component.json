@@ -2,8 +2,8 @@
     "title": "TestGrount Component",
     "description": "A play ground component to practice design pattern",
     "docsUrl": "",
+    "version": "1.0",
     "buildType": "docker",
-    "version": "1.0.1",
     "envVars": {
         "API_KEY": {
             "required": true,

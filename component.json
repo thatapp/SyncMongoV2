@@ -1,9 +1,8 @@
 {
-    "title": "Hook Component",
+    "title": "TestGround Component",
     "description": "Upsert Hook logs and consolidated hooks",
     "docsUrl": "",
     "buildType": "docker",
-    "version": "1.0.1",
     "envVars": {
         "API_KEY": {
             "required": true,

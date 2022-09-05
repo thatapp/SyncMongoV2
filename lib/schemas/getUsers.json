@@ -4,7 +4,7 @@
         "userId": {
             "required": false,
             "type": "number",
-            "title": "item_id"
+            "title": "userId"
         }
     }
 }

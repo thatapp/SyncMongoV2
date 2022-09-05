@@ -22,9 +22,6 @@
                 "viewClass": "PasswordFieldView",
                 "required": true,
                 "prompt": "Kindly enter Password"
-            },
-            "mongo_credential": {
-                "apiKey": "{{API_KEY}}"
             }
         }
     },

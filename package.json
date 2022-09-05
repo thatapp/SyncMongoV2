@@ -1,14 +1,10 @@
 {
     "name": "test-component-connector",
     "version": "2.0.0",
-    "description": "# Introduction\nThe Xero Accounting API is a RESTful web service and uses the OAuth (v1.0a) protocol to authenticate 3rd party applications. The Accounting API exposes accounting and related functions of the main Xero application and can be used for a variety of purposes such as creating transactions like invoices and credit notes, right through to extracting accounting data via our reports endpoint.\n",
+    "description": "# A Play ground component",
     "main": "component.json",
     "scripts": {
         "test": "exit 0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:elasticio/petstore-component-nodejs.git"
     },
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",

@@ -10,14 +10,28 @@
         }
     },
     "credentials": {
-        "mongo_credential": {
-            "apiKey": "{{API_KEY}}"
+        "fields": {
+            "username": {
+                "label": "Username",
+                "viewClass": "TextFieldView",
+                "required": true,
+                "prompt": "Kindly enter Username"
+            },
+            "password": {
+                "label": "Password",
+                "viewClass": "PasswordFieldView",
+                "required": true,
+                "prompt": "Kindly enter Password"
+            },
+            "mongo_credential": {
+                "apiKey": "{{API_KEY}}"
+            }
         }
     },
     "actions": {
         "getUsers": {
             "main": "./lib/actions/getUsers.js",
-            "title": "Upsert Hook",
+            "title": "Get Users",
             "metadata": {
                 "in": "./lib/schemas/getUsers.in.json"
             }

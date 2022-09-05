@@ -1,7 +1,7 @@
-# ![LOGO](logo.png) Update Consolidated hooks
+# ![LOGO](logo.png) Test Component
 
 ## Description
 
-A generated **flow**ground connector for updating and processing Consolidated Hooks.
+A playground Component to test EIO knowledge.
 
 

@@ -3,6 +3,7 @@
     "description": "Upsert Hook logs and consolidated hooks",
     "docsUrl": "",
     "buildType": "docker",
+    "version": "1.0.0",
     "envVars": {
         "API_KEY": {
             "required": true,

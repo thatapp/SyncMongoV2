@@ -35,7 +35,7 @@
         },
         "getTodos": {
             "main": "./lib/actions/getTodo.js",
-            "title": "Get Users"
+            "title": "Get Todos"
         }
     }
 }

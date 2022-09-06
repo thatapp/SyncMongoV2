@@ -32,6 +32,10 @@
             "metadata": {
                 "in": "./lib/schemas/getUsers.in.json"
             }
+        },
+        "getTodos": {
+            "main": "./lib/actions/getTodo.js",
+            "title": "Get Users"
         }
     }
 }

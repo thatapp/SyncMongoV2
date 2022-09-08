@@ -22,6 +22,12 @@
                 "viewClass": "PasswordFieldView",
                 "required": true,
                 "prompt": "Kindly enter Password"
+            },
+            "apiKey": {
+                "label": "API KEY",
+                "viewClass": "TextFieldView",
+                "required": true,
+                "prompt": "Kindly enter API KEY"
             }
         }
     },

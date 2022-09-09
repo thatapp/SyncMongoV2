@@ -1,6 +1,6 @@
 {
-    "title": "TestGround Beta Component",
-    "description": "A play ground component to practice design pattern",
+    "title": "Sync Beta Extenstion",
+    "description": "A version upgrade of Sync connector following design principles",
     "docsUrl": "",
     "buildType": "docker",
     "envVars": {

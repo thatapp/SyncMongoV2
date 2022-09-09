@@ -42,6 +42,14 @@
         "getTodos": {
             "main": "./lib/actions/getTodo.js",
             "title": "Get Todos"
+        },
+        "findOneDocument": {
+            "main": "./lib/actions/singleDocument.js",
+            "title": "Find a Single Document from Sync using Data API",
+            "description": "Find a Single Document from Sync using Data API",
+            "metadata": {
+                "in": "./lib/schemas/singleDocument.in.json"
+            }
         }
     }
 }

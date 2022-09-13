@@ -1,6 +1,6 @@
 {
-    "title": "Sync Beta Extenstion",
-    "description": "A version upgrade of Sync connector following design principles",
+    "title": "Sync Beta Extension",
+    "description": "A version upgrade of Sync connector",
     "docsUrl": "",
     "buildType": "docker",
     "envVars": {
@@ -11,18 +11,6 @@
     },
     "credentials": {
         "fields": {
-            "username": {
-                "label": "Username",
-                "viewClass": "TextFieldView",
-                "required": true,
-                "prompt": "Kindly enter Username"
-            },
-            "password": {
-                "label": "Password",
-                "viewClass": "PasswordFieldView",
-                "required": true,
-                "prompt": "Kindly enter Password"
-            },
             "apiKey": {
                 "label": "API KEY",
                 "viewClass": "PasswordFieldView",

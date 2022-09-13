@@ -1,5 +1,5 @@
 {
-    "name": "Sync MongoDB by Thatapp",
+    "name": "sync mongodb by thatapp",
     "version": "2.0.0",
     "description": "# This connect to the data warehouse of the ThatApp platform",
     "main": "component.json",

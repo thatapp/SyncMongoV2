@@ -1,0 +1,104 @@
+{
+  "title": "Sync Beta Extension",
+  "description": "A version upgrade of Sync connector",
+  "docsUrl": "",
+  "buildType": "docker",
+  "envVars": {
+    "API_KEY": {
+      "required": true,
+      "description": "Kindly enter the API Key for the MongoDB Data APIs to be functional"
+    }
+  },
+  "credentials": {
+    "fields": {
+      "apiKey": {
+        "label": "API KEY",
+        "viewClass": "PasswordFieldView",
+        "required": true,
+        "prompt": "Kindly enter API KEY"
+      }
+    }
+  },
+  "actions": {
+    "upsert": {
+      "main": "./lib/actions/upsert.js",
+      "title": "Upsert using Data API",
+      "description": "Upsert data using Data API",
+      "metadata": {
+        "in": "./lib/schemas/upsert.in.json"
+      }
+    },
+    "aggregate": {
+      "main": "./lib/actions/aggregate.js",
+      "title": "Aggregation from Sync using Data API",
+      "description": "Aggregation from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/aggregation.in.json"
+      }
+    },
+    "findOneDocument": {
+      "main": "./lib/actions/singleDocument.js",
+      "title": "Find a Single Document from Sync using Data API",
+      "description": "Find a Single Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/singleDocument.in.json"
+      }
+    },
+    "findMultipleDocument": {
+      "main": "./lib/actions/multipleDocument.js",
+      "title": "Find multiple Document from Sync using Data API",
+      "description": "Find multiple Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/multipleDocument.in.json"
+      }
+    },
+    "insertSingleDocument": {
+      "main": "./lib/actions/insertSingleDocument.js",
+      "title": "Insert a Document from Sync using Data API",
+      "description": "Insert a Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/insertSingleDocument.in.json"
+      }
+    },
+    "insertMultipleDocument": {
+      "main": "./lib/actions/insertMultipleDocument.js",
+      "title": "Insert multiple Document from Sync using Data API",
+      "description": "Insert multiple Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/insertMultipleDocument.in.json"
+      }
+    },
+    "updateSingleDocument": {
+      "main": "./lib/actions/updateSingleDocument.js",
+      "title": "Update single Document from Sync using Data API",
+      "description": "Update single Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/updateSingleDocument.in.json"
+      }
+    },
+    "replaceDocument": {
+      "main": "./lib/actions/replace.js",
+      "title": "Replace a Document from Sync using Data API",
+      "description": "Replace a Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/replace.in.json"
+      }
+    },
+    "deleteOneDocument": {
+      "main": "./lib/actions/deleteOneDocument.js",
+      "title": "Delete One Document from Sync using Data API",
+      "description": "Delete One Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/deleteOneDocument.in.json"
+      }
+    },
+    "deletemultipleDocument": {
+      "main": "./lib/actions/deletemultipleDocument.js",
+      "title": "Delete multiple Document from Sync using Data API",
+      "description": "Delete multiple Document from Sync using Data API",
+      "metadata": {
+        "in": "./lib/schemas/deletemultipleDocument.in.json"
+      }
+    }
+  }
+}

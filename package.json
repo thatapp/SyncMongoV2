@@ -1,7 +1,7 @@
 {
-    "name": "sync mongodb by thatapp",
+    "name": "test-component-connector",
     "version": "2.0.0",
-    "description": "# This connect to the data warehouse of the ThatApp platform",
+    "description": "# A Play ground component",
     "main": "component.json",
     "scripts": {
         "test": "exit 0"
